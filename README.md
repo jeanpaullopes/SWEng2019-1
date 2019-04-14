@@ -24,12 +24,19 @@ Executar apenas a primeira vez no terminal:
 
 -   gulp build
 
-#### Imagens
+### Referências de CSS auxiliar
+
+-   [Bootstrap Display](https://getbootstrap.com/docs/4.3/utilities/display/)
+-   [Bootstrap Grid](https://getbootstrap.com/docs/4.3/layout/grid/)
+-   [Bootstrap Spacing](https://getbootstrap.com/docs/4.3/utilities/spacing/)
+-   [Bootstrap Text](https://getbootstrap.com/docs/4.3/utilities/text/)
+
+### Imagens
 
 -   Rodar o 'gulp image' para otimizar as imagens de pasta resources e colocar na pasta public;
 -   Seguir a nomenclatura spinal-case - Ex: image-name;
 
-#### Javascript
+### Javascript
 
 -   Ao utilizar métodos do ES6 sempre verificar se tem suporte para IE9+, de preferência para métodos do ES5;
 -   Priorizar os seletores nativos como "document.getElementById" ou "document.querySelector";
@@ -37,28 +44,28 @@ Executar apenas a primeira vez no terminal:
 -   Strings utilizar apóstrofo - Ex: 'texto';
 -   Utilizar [JSDOC](https://msdn.microsoft.com/pt-br/library/Mt162307.aspx);
 
-#### Links externos com target="\_blank" em tags <a/>
+### Links externos com target="\_blank" em tags <a/>
 
 -   Utilizar rel="noopener" [Link](https://desenvolvimentoparaweb.com/miscelanea/relnoopener-performance-seguranca/);
 
-#### Plugins
+### Plugins
 
 -   HttpRequest: [Axios](https://github.com/axios/axios);
 -   Template Engine: [Mustache](https://github.com/janl/mustache.js/);
 
-#### SASS
+### SASS
 
 -   Utilizar as variáveis sempre que possível;
 -   Media queries dentro do próprio elemento seguindo os padrões especificados no projeto;
 -   [Metodologia tipo modular](https://medium.com/@marcmintel/how-to-use-the-module-pattern-in-your-scss-sass-stylesheets-89fe38a6e1f3);
 
-#### SVG
+### SVG
 
 -   Rodar o 'gulp image-svg' para otimizar os svgs de pasta resources e colocar na pasta public;
 -   Nomes dos arquivos devem começar com "svg" e seguir nomenclatura spinal-case - Ex: svg-nome-arquivo;
 -   Usar os svgs de maneira inline com o file_get_contents - Ex: <?= file_get_contents(asset('assets/img/svg/svg-arrow-lg-right.svg')); ?>
 
-#### Principais Dependências
+### Principais Dependências
 
 -   [@babel/cli](https://babeljs.io/docs/en/babel-cli)
 -   [@babel/core](https://www.npmjs.com/package/@babel/core)
@@ -80,8 +87,7 @@ Executar apenas a primeira vez no terminal:
 -   [gulp-uglify](https://www.npmjs.com/package/gulp-uglify)
 -   [internal-ip](https://www.npmjs.com/package/internal-ip)
 
-#### Principais Metodologias
+### Principais Metodologias
 
--   [Bootstrap Grids](https://getbootstrap.com/) Obs: o css foi alterado para scss e existem pequenas alterações
 -   [ES6](http://es6-features.org/)
--   [RequireJS](https://requirejs.org/) Obs: RequireJS is a JavaScript file and module loader
+-   [RequireJS](https://requirejs.org/) Obs: RequireJS é JavaScript modular
