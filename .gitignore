@@ -1,0 +1,47 @@
+# Laravel 5.7.*
+/.idea
+/.vagrant
+/node_modules
+/public/hot
+/public/storage
+/public/uploads
+/storage/*.key
+/vendor
+.env
+Homestead.json
+Homestead.yaml
+npm-debug.log
+package-lock.json
+composer.lock
+composer.phar
+
+# IDE and Editors
+/.vscode
+/nbproject
+*.sublime-project
+*.sublime-workspace
+.brackets.json
+.project
+_notes
+
+# Compiled sources
+*.com
+*.class
+*.dll
+*.exe
+*.log
+*.o
+*.so
+error_log/
+npm-debug.log*
+
+# Generated
+public/admin/**
+public/assets/css/**
+public/assets/html/**
+public/assets/img/**
+public/assets/js/**
+public/assets/uploads/**
+
+# Gitkeep
+!**/.gitkeep
