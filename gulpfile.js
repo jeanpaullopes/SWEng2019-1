@@ -27,23 +27,19 @@ const path = {
 
 const sourcePath = {
     clean: [path.publicAssets + 'css', path.publicAssets + 'js', path.publicAssets + 'img'],
-    cssCommon: [path.resourceAssets + 'scss/common/*.scss'],
-    cssComponent: [path.resourceAssets + 'scss/component/*.scss'],
-    cssLayout: [path.resourceAssets + 'scss/layout/*.scss'],
+    scssCommon: [path.resourceAssets + 'scss/common/*.scss'],
+    scssLayout: [path.resourceAssets + 'scss/layout/*.scss'],
     image: [path.resourceAssets + 'img/**/*.gif', path.resourceAssets + 'img/**/*.jpg', path.resourceAssets + 'img/**/*.jpeg', path.resourceAssets + 'img/**/*.png'],
     imageSvg: [path.resourceAssets + 'img/svg/*.svg'],
     jsCommon: [path.resourceAssets + 'js/common/*.js'],
-    jsComponent: [path.resourceAssets + 'js/component/*.js'],
     jsLayout: [path.resourceAssets + 'js/layout/*.js'],
     php: ['./resources/views/**/*.php']
 };
 
 const destPath = {
     cssCommon: path.publicAssets + 'css/common',
-    cssComponent: path.publicAssets + 'css/component',
     cssLayout: path.publicAssets + 'css/layout',
     jsCommon: path.publicAssets + 'js/common',
-    jsComponent: path.publicAssets + 'js/component',
     jsLayout: path.publicAssets + 'js/layout',
     image: path.publicAssets + 'img',
     imageSvg: path.publicAssets + 'img/svg'
@@ -107,7 +103,7 @@ gulp.task('clean', () => {
 // CSS COMMON
 gulp.task('css-common', () => {
     return gulp
-        .src(sourcePath.cssCommon)
+        .src(sourcePath.scssCommon)
         .pipe(
             plumber({
                 errorHandler: function(err) {
@@ -130,36 +126,10 @@ gulp.task('css-common', () => {
         });
 });
 
-// CSS COMPONENT
-gulp.task('css-component', () => {
-    return gulp
-        .src(sourcePath.cssComponent)
-        .pipe(
-            plumber({
-                errorHandler: function(err) {
-                    console.log('error: ', err);
-                    this.emit('end');
-                }
-            })
-        )
-        .pipe(sassLint(sassLintConfig))
-        .pipe(sassLint.format())
-        .pipe(sass.sync(sassConfig).on('error', sass.logError))
-        .pipe(autoprefixer(autoprefixerConfig))
-        .pipe(gulp.dest(destPath.cssComponent))
-        .pipe(browserSync.stream())
-        .on('error', (err) => {
-            console.log(err.message);
-        })
-        .on('end', () => {
-            console.log('css-component finalizado');
-        });
-});
-
 // CSS LAYOUT
 gulp.task('css-layout', () => {
     return gulp
-        .src(sourcePath.cssLayout)
+        .src(sourcePath.scssLayout)
         .pipe(
             plumber({
                 errorHandler: function(err) {
@@ -182,6 +152,34 @@ gulp.task('css-layout', () => {
         });
 });
 
+// IMAGE
+gulp.task('image', () => {
+    return gulp
+        .src(sourcePath.image)
+        .pipe(image(imageConfig))
+        .pipe(gulp.dest(destPath.image))
+        .on('error', (err) => {
+            console.log(err.message);
+        })
+        .on('end', () => {
+            console.log('image finalizado');
+        });
+});
+
+// IMAGE SVG
+gulp.task('image-svg', () => {
+    return gulp
+        .src(sourcePath.imageSvg)
+        .pipe(image(imageConfig))
+        .pipe(gulp.dest(destPath.imageSvg))
+        .on('error', (err) => {
+            console.log(err.message);
+        })
+        .on('end', () => {
+            console.log('image-svg finalizado');
+        });
+});
+
 // JS COMMON
 gulp.task('js-common', () => {
     return gulp
@@ -197,24 +195,6 @@ gulp.task('js-common', () => {
         })
         .on('end', () => {
             console.log('js-common finalizado');
-        });
-});
-
-// JS COMPONENT
-gulp.task('js-component', () => {
-    return gulp
-        .src(sourcePath.jsComponent)
-        .pipe(eslint.format('stylish'))
-        .pipe(eslint.failAfterError())
-        .pipe(babel(babelConfig))
-        .pipe(gulpif(!dev, uglify()))
-        .pipe(gulp.dest(destPath.jsComponent))
-        .pipe(browserSync.stream())
-        .on('error', (err) => {
-            console.log(err.message);
-        })
-        .on('end', () => {
-            console.log('js-component finalizado');
         });
 });
 
@@ -236,34 +216,6 @@ gulp.task('js-layout', () => {
         });
 });
 
-// IMAGE
-gulp.task('image', () => {
-    return gulp
-        .src(sourcePath.image)
-        .pipe(image(imageConfig))
-        .pipe(gulp.dest(destPath.image))
-        .on('error', (err) => {
-            console.log(err.message);
-        })
-        .on('end', () => {
-            console.log('image finalizado');
-        });
-});
-
-// SVG
-gulp.task('image-svg', () => {
-    return gulp
-        .src(sourcePath.imageSvg)
-        .pipe(image(imageConfig))
-        .pipe(gulp.dest(destPath.imageSvg))
-        .on('error', (err) => {
-            console.log(err.message);
-        })
-        .on('end', () => {
-            console.log('image-svg finalizado');
-        });
-});
-
 // CHANGE TO DEV
 gulp.task('changeToDev', (done) => {
     dev = true;
@@ -277,22 +229,15 @@ gulp.task('changeToProd', (done) => {
 });
 
 // WATCHS
-gulp.task('watch-css-common', () => {
-    gulp.watch(sourcePath.cssCommon, gulp.series('css-common'), (done) => {
+gulp.task('watch-scss-common', () => {
+    gulp.watch(sourcePath.scssCommon, gulp.series('css-common'), (done) => {
         browserSync.reload();
         done();
     });
 });
 
-gulp.task('watch-css-component', () => {
-    gulp.watch(sourcePath.cssComponent, gulp.series('css-component'), (done) => {
-        browserSync.reload();
-        done();
-    });
-});
-
-gulp.task('watch-css-layout', () => {
-    gulp.watch(sourcePath.cssLayout, gulp.series('css-layout'), (done) => {
+gulp.task('watch-scss-layout', () => {
+    gulp.watch(sourcePath.scssLayout, gulp.series('css-layout'), (done) => {
         browserSync.reload();
         done();
     });
@@ -300,13 +245,6 @@ gulp.task('watch-css-layout', () => {
 
 gulp.task('watch-js-common', () => {
     gulp.watch(sourcePath.jsCommon, gulp.series('js-common'), (done) => {
-        browserSync.reload();
-        done();
-    });
-});
-
-gulp.task('watch-js-component', () => {
-    gulp.watch(sourcePath.jsComponent, gulp.series('js-component'), (done) => {
         browserSync.reload();
         done();
     });
@@ -324,10 +262,10 @@ gulp.task('watch-php', () => {
 });
 
 // ALL TASKS
-gulp.task('all-tasks', gulp.parallel(['css-common', 'css-component', 'css-layout', 'js-common', 'js-component', 'js-layout', 'image', 'image-svg']));
+gulp.task('all-tasks', gulp.parallel(['css-common', 'css-layout', 'js-common', 'js-layout', 'image', 'image-svg']));
 
 // ALL WATCHS
-gulp.task('all-watchs', gulp.parallel(['watch-css-common', 'watch-css-component', 'watch-css-layout', 'watch-js-common', 'watch-js-component', 'watch-js-layout', 'watch-php', 'browser-sync']));
+gulp.task('all-watchs', gulp.parallel(['watch-scss-common', 'watch-scss-layout', 'watch-js-common', 'watch-js-layout', 'watch-php', 'browser-sync']));
 
 // DEFAULT
 gulp.task('default', gulp.series(['changeToDev', 'clean', 'all-tasks', 'all-watchs']));
