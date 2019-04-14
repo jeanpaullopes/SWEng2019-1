@@ -90,4 +90,4 @@ Executar apenas a primeira vez no terminal:
 ### Principais Metodologias
 
 -   [ES6](http://es6-features.org/)
--   [RequireJS](https://requirejs.org/) Obs: RequireJS é JavaScript modular
+-   [RequireJS](https://requirejs.org/)
