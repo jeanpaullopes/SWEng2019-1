@@ -17,10 +17,11 @@ Projeto da turma de Fundamentos de Engenharia de Software FTEC 2019/1
 Executar apenas a primeira vez no terminal:
 
 -   npm i -g npm (atualiza NPM)
--   npm rm -g gulp (remove GULP)
+-   npm rm -g gulp (remove GULP caso esteja instalado, pois necessita somente do gulp-cli)
 -   npm i -g gulp-cli (instala gulp-cli globalmente)
 -   npm i -g node-sass (atualiza node-sass globalmente)
 -   npm i (instala pacotes de tarefas)
+-   npm audit fix (corrigi problemas em pacotes)
 
 ### Necessário para funcionar o projeto
 
