@@ -30,7 +30,7 @@
     &.btn-secondary {
         background-color: transparent;
         color: $color-white;
-        font-family: $font-secondary;
+        font-family: $font-primary;
         text-transform: uppercase;
         transition: background-color $transition, color $transition;
         @media only screen and (min-width: $md) {

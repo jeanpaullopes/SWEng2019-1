@@ -68,7 +68,7 @@ textarea {
         border-radius: $border-radius;
         box-shadow: inset 0 0 0 1px $color-black;
         color: $color-black;
-        font-family: $font-secondary;
+        font-family: $font-primary;
         font-weight: 100;
         height: $input-height;
         letter-spacing: 1px;
@@ -273,7 +273,7 @@ textarea {
             border: 0;
             border-radius: $border-radius;
             color: $color-white;
-            font-family: $font-secondary;
+            font-family: $font-primary;
             font-weight: 100;
             height: $input-height - 6;
             letter-spacing: 1px;
@@ -294,7 +294,7 @@ textarea {
     .form-section {
         background-color: $color-black;
         color: $color-white;
-        font-family: $font-secondary;
+        font-family: $font-primary;
         height: $input-height;
         line-height: $input-height;
         padding: 0 $input-padding;

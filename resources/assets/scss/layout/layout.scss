@@ -96,7 +96,7 @@ main {
     }
     .title4 {
         @include font-calc-rem(10px);
-        font-family: $font-primary-alt;
+        font-family: $font-primary;
         letter-spacing: 5px;
         margin-bottom: 2px;
         @media only screen and (min-width: $sm) {
@@ -105,7 +105,7 @@ main {
     }
     .title5 {
         color: $color-gray-2;
-        font-family: $font-primary-alt;
+        font-family: $font-primary;
         letter-spacing: 5px;
         margin-bottom: 4vh;
         margin-top: -5px;

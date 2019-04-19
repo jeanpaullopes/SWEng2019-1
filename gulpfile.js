@@ -80,7 +80,7 @@ const sassLintConfig = {
     configFile: '.sasslintrc'
 };
 
-// BROWSER SYNC CONFIG
+// BROWSER SYNC
 gulp.task('browser-sync', () => {
     browserSync.init({
         baseDir: './',
@@ -95,6 +95,7 @@ gulp.task('browser-sync', () => {
 gulp.task('clean', () => {
     return gulp
         .src(sourcePath.clean, {
+            allowEmpty: true,
             read: false
         })
         .pipe(clean({ force: true }));

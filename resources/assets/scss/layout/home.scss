@@ -59,7 +59,7 @@
                 p {
                     @include font-calc-rem(16px);
                     color: $color-white;
-                    font-family: $font-secondary;
+                    font-family: $font-primary;
                     margin-bottom: 30px;
                     @media only screen and (max-width: $sm) {
                         padding: 0 ($wrap-padding-x * 4);
@@ -68,7 +68,7 @@
                 .title-institucional {
                     @include font-calc-rem(18px);
                     color: $color-gray-2;
-                    font-family: $font-secondary;
+                    font-family: $font-primary;
                     letter-spacing: 4px;
                     margin-bottom: 30px;
                     text-align: center;
