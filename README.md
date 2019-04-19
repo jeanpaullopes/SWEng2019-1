@@ -2,6 +2,16 @@
 
 Projeto da turma de Fundamentos de Engenharia de Software FTEC 2019/1
 
+## INSTALAÇÕES NECESSÁRIA PARA O PROJETO
+
+-   [GIT](https://git-scm.com/downloads)
+-   [NodeJS](https://nodejs.org/en/download/)
+-   [Xampp](https://www.apachefriends.org/download.html)
+
+## MODO DE USAR O TERMINAL
+
+-   Na pasta do projeto clicar com o direito do mouse e clicar em "Git Bash Here"
+
 ## FRONTEND
 
 Executar apenas a primeira vez no terminal:

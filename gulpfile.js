@@ -80,13 +80,13 @@ const sassLintConfig = {
     configFile: '.sasslintrc'
 };
 
-// BROWSER SYNC
+// BROWSER SYNC CONFIG
 gulp.task('browser-sync', () => {
     browserSync.init({
         baseDir: './',
         host: internalIp.v4.sync(),
         proxy: {
-            target: 'localhost.lippert.com'
+            target: 'localhost.app.com'
         }
     });
 });
