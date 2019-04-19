@@ -14,7 +14,7 @@
           "destino" : "Viamao",
           "via" : ["av.ipiranga","av.bento goncalves"]}
         },
-  "caroneiro" : [{
+  "caroneiros" : [{
       "id": 6,
       "email": "joao@teste.com.br",
       "fone": "51999999999",
