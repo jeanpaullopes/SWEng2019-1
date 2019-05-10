@@ -1,3 +1,4 @@
+    
 {
     "data": {
         "id": 4,
@@ -37,7 +38,8 @@
             }
         ],
         "cancelada": false,
-        "horarioPartida": "18/04/2019 22:00:00",
+        "horarioPartida": "1557448437170",
+        "HoraHumana": "MM/DD/YYYY HH:MM:SS"
         "vagas": 3
     }
 }
