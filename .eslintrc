@@ -1,51 +1,100 @@
 {
+    "extends": ["plugin:prettier/recommended", "prettier/react"],
+    "globals": {
+        "$": true,
+        "document": true,
+        "fetch": true,
+        "jQuery": true,
+        "localStorage": true,
+        "React": true,
+        "window": true
+    },
+    "parser": "babel-eslint",
     "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
         "ecmaVersion": 6,
         "sourceType": "module"
     },
+    "plugins": ["react", "prettier"],
+    "root": true,
     "rules": {
-        "new-cap": 0,
-        "block-scoped-var": 1,
-        "no-alert": 0,
-        "no-bitwise": 0,
-        "camelcase": 1,
-        "curly": 1,
-        "eqeqeq": 0,
-        "no-eq-null": 0,
-        "no-empty": 1,
-        "no-use-before-define": 0,
-        "no-obj-calls": 2,
-        "no-unused-vars": 0,
-        "no-shadow": 0,
-        "strict": 2,
-        "no-invalid-regexp": 2,
-        "comma-dangle": 2,
-        "no-undef": 1,
-        "no-new": 1,
-        "no-extra-semi": 1,
-        "no-debugger": 2,
-        "no-caller": 1,
-        "semi": 1,
-        "quotes": 0,
-        "no-unreachable": 2
+        "arrow-body-style": "off",
+        "babel/object-curly-spacing": "off",
+        "block-scoped-var": "warn",
+        "camelcase": "warn",
+        "comma-dangle": "off",
+        "curly": "warn",
+        "eqeqeq": "off",
+        "global-require": "off",
+        "import/extensions": "off",
+        "import/no-extraneous-dependencies": "off",
+        "indent": ["error", 4],
+        "jsx-a11y/anchor-is-valid": "off",
+        "jsx-a11y/href-no-hash": "off",
+        "new-cap": "off",
+        "no-alert": "off",
+        "no-bitwise": "off",
+        "no-empty": "warn",
+        "no-eq-null": "off",
+        "no-invalid-regexp": "error",
+        "no-multiple-empty-lines": ["warn", { "max": 1 }],
+        "no-obj-calls": "error",
+        "no-shadow": "off",
+        "no-underscore-dangle": ["error", { "allow": ["__REDUX_DEVTOOLS_EXTENSION__"] }],
+        "no-unreachable": "error",
+        "no-unused-expressions": ["error", { "allowTaggedTemplates": true }],
+        "no-unused-vars": "off",
+        "no-use-before-define": "off",
+        "no-undef": "warn",
+        "no-new": "warn",
+        "no-extra-semi": "warn",
+        "no-debugger": "error",
+        "no-caller": "warn",
+        "prettier/prettier": "error",
+        "quotes": ["warn", "single", { "allowTemplateLiterals": true }],
+        "react/jsx-boolean-value": ["warn", "never"],
+        "react/jsx-closing-bracket-location": ["warn", "after-props"],
+        "react/jsx-curly-spacing": ["warn", "never"],
+        "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx"] }],
+        "react/jsx-first-prop-new-line": ["warn", "multiline"],
+        "react/jsx-handler-names": [
+            "warn",
+            {
+                "eventHandlerPrefix": "handle",
+                "eventHandlerPropPrefix": "on"
+            }
+        ],
+        "react/jsx-indent": ["warn", 2],
+        "react/jsx-key": "error",
+        "react/jsx-indent-props": 0,
+        "react/jsx-one-expression-per-line": "off",
+        "react/jsx-wrap-multilines": ["warn"],
+        "react/prefer-stateless-function": "warn",
+        "react/require-extension": "off",
+        "react/self-closing-comp": [
+            "warn",
+            {
+                "component": true,
+                "html": false
+            }
+        ],
+        "react/sort-comp": [
+            1,
+            {
+                "order": ["static-methods", "lifecycle", "everything-else", "rendering"],
+                "groups": {
+                    "rendering": ["/^render.+$/", "render"]
+                }
+            }
+        ],
+        "semi": "warn",
+        "strict": "error"
     },
-    "globals": [
-        "$",
-        "jQuery",
-        "Waypoint",
-        "bLazy",
-        "Blazy",
-        "lightbox",
-        "absolutePath",
-        "currentInstitution",
-        "hiddenMenuTimeout",
-        "toastr",
-        "Dropzone",
-        "google",
-        "sortable",
-        "base"
-    ],
     "env": {
-        "es6": true
+        "browser": true,
+        "es6": true,
+        "node": true
     }
 }
