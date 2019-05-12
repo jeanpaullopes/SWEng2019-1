@@ -53,7 +53,7 @@ Homestead.yaml
 .eslintcache
 
 # Generated
-/dist
+/public/asset
 
 # Gitkeep
 !**/.gitkeep

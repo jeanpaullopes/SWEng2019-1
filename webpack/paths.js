@@ -1,15 +1,15 @@
 const path = require('path');
 
 const paths = {
-    asset: 'dist/asset',
-    dist: 'dist',
+    asset: 'public/asset',
+    public: 'public',
     src: 'src'
 };
 
 module.exports = {
     root: path.resolve(__dirname, '../'),
     entryPath: path.resolve(__dirname, '../', `${paths.src}/index.jsx`),
-    outputPath: path.resolve(__dirname, '../', paths.dist),
+    outputPath: path.resolve(__dirname, '../', paths.public),
     templatePath: path.resolve(__dirname, '../', `${paths.src}/index.html`),
     cssFolder: path.resolve(__dirname, '../', `${paths.asset}/css`),
     fontsFolder: path.resolve(__dirname, '../', `${paths.asset}/font`),
