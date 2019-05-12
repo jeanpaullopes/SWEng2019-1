@@ -9,6 +9,11 @@ const devMode = process.env.NODE_ENV === 'development' ? true : false;
 
 module.exports = {
     entry: commonPaths.entryPath,
+    output: {
+        chunkFilename: devMode ? `${commonPaths.jsFolder}/[name].js` : `${commonPaths.jsFolder}/[name].[chunkhash].js`,
+        filename: devMode ? `${commonPaths.jsFolder}/[name].js` : `${commonPaths.jsFolder}/[name].[hash].js`,
+        path: commonPaths.outputPath
+    },
     module: {
         rules: [
             {
@@ -28,17 +33,28 @@ module.exports = {
             {
                 test: /\.(css|scss)$/,
                 use: [
-                    devMode ? 'style-loader' : miniCssExtractPlugin.loader,
+                    {
+                        loader: devMode ? 'style-loader' : miniCssExtractPlugin.loader,
+                        options: {
+                            hmr: devMode,
+                            publicPath: commonPaths.outputPath
+                        }
+                    },
                     {
                         loader: 'css-loader',
                         options: {
-                            sourceMap: devMode ? true : false,
-                            modules: true,
                             camelCase: true,
-                            localIdentName: '[local]___[hash:base64:5]'
+                            modules: true,
+                            localIdentName: '[local]___[hash:base64:5]',
+                            sourceMap: devMode ? true : false
                         }
                     },
-                    'sass-loader'
+                    {
+                        loader: 'sass-loader',
+                        options: {
+                            sourceMap: devMode ? true : false
+                        }
+                    }
                 ]
             },
             {
@@ -86,6 +102,10 @@ module.exports = {
         }),
         new scriptExtHtmlWebpackPlugin({
             defaultAttribute: 'async'
+        }),
+        new miniCssExtractPlugin({
+            chunkFilename: devMode ? `${commonPaths.cssFolder}/[name].css` : `${commonPaths.cssFolder}/[name].[chunkhash].css`,
+            filename: devMode ? `${commonPaths.cssFolder}/[name].css` : `${commonPaths.cssFolder}/[name].[hash].css`
         }),
         new webpack.ProgressPlugin()
     ]

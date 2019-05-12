@@ -1,7 +1,7 @@
 const path = require('path');
 
 const paths = {
-    asset: 'public/asset',
+    asset: 'asset',
     public: 'public',
     src: 'src'
 };

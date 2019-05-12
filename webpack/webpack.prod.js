@@ -7,11 +7,6 @@ const terserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
     mode: 'production',
-    output: {
-        chunkFilename: `${commonPaths.jsFolder}/[name].[chunkhash].js`,
-        filename: `${commonPaths.jsFolder}/[name].[hash].js`,
-        path: commonPaths.outputPath
-    },
     optimization: {
         minimizer: [
             new terserPlugin({
@@ -47,12 +42,8 @@ module.exports = {
         runtimeChunk: true
     },
     plugins: [
-        new miniCssExtractPlugin({
-            chunkFilename: `${commonPaths.cssFolder}/[name].css`,
-            filename: `${commonPaths.cssFolder}/[name].css`
-        }),
         new cleanWebpackPlugin({
-            cleanOnceBeforeBuildPatterns: []
+            cleanOnceBeforeBuildPatterns: [commonPaths.assetPath]
         })
     ],
     devtool: 'source-map'

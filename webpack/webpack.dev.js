@@ -4,11 +4,6 @@ const webpack = require('webpack');
 
 module.exports = {
     mode: 'development',
-    output: {
-        chunkFilename: '[name].js',
-        filename: '[name].js',
-        path: commonPaths.outputPath
-    },
     devServer: {
         contentBase: commonPaths.outputPath,
         compress: true,
