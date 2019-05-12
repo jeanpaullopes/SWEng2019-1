@@ -23,7 +23,10 @@ Executar apenas a primeira vez no terminal:
 
 ## React
 
--   [Referencia da estrutura](https://medium.freecodecamp.org/a-complete-react-boilerplate-tutorial-from-zero-to-hero-20023e086c4a)
+-   Referencias da estrutura
+    [Básico](https://medium.freecodecamp.org/a-complete-react-boilerplate-tutorial-from-zero-to-hero-20023e086c4a)
+    [Extras](https://medium.com/@sethalexander/how-to-build-your-own-react-boilerplate-1a97d09337fd)
+    [Extras](https://www.robinwieruch.de/minimal-react-webpack-babel-setup/)
 
 ### Necessário para funcionar o projeto
 
@@ -31,11 +34,11 @@ Executar apenas a primeira vez no terminal:
 
 #### Ambiente de desenvolvimento, executar no terminal:
 
--
+-   npm run dev
 
 #### Ambiente de produção, executar no terminal:
 
--
+-   npm run prod
 
 ### Referências de CSS auxiliar
 
@@ -64,7 +67,6 @@ Executar apenas a primeira vez no terminal:
 ### Plugins
 
 -   HttpRequest: [Axios](https://github.com/axios/axios);
--   Template Engine: [Mustache](https://github.com/janl/mustache.js/);
 
 ### SASS
 
@@ -72,35 +74,6 @@ Executar apenas a primeira vez no terminal:
 -   Media queries dentro do próprio elemento seguindo os padrões especificados no projeto;
 -   [Metodologia tipo modular](https://medium.com/@marcmintel/how-to-use-the-module-pattern-in-your-scss-sass-stylesheets-89fe38a6e1f3);
 
-### SVG
-
--   Rodar o 'gulp image-svg' para otimizar os svgs de pasta resources e colocar na pasta public;
--   Nomes dos arquivos devem começar com "svg" e seguir nomenclatura spinal-case - Ex: svg-nome-arquivo;
--   Usar os svgs de maneira inline com o file_get_contents - Ex: <?= file_get_contents(asset('assets/img/svg/svg-arrow-lg-right.svg')); ?>
-
-### Principais Dependências
-
--   [@babel/cli](https://babeljs.io/docs/en/babel-cli)
--   [@babel/core](https://www.npmjs.com/package/@babel/core)
--   [@babel/polyfill](https://babeljs.io/docs/en/babel-polyfill)
--   [@babel/preset-env](https://babeljs.io/docs/en/babel-preset-env)
--   [@babel/plugin-transform-modules-amd](https://www.npmjs.com/package/@babel/plugin-transform-modules-amd)
--   [bootstrap](https://getbootstrap.com/)
--   [browser-sync](https://browsersync.io/docs/gulp)
--   [gulp](https://www.npmjs.com/package/gulp)
--   [gulp-autoprefixer](https://www.npmjs.com/package/gulp-autoprefixer)
--   [gulp-babel](https://www.npmjs.com/package/gulp-babel)
--   [gulp-clean](https://www.npmjs.com/package/gulp-clean)
--   [gulp-eslint](https://www.npmjs.com/package/gulp-eslint)
--   [gulp-if](https://www.npmjs.com/package/gulp-if)
--   [gulp-imagemin](https://www.npmjs.com/package/gulp-imagemin)
--   [gulp-plumber](https://www.npmjs.com/package/gulp-plumber)
--   [gulp-sass](https://www.npmjs.com/package/gulp-sass)
--   [gulp-sass-lint](https://www.npmjs.com/package/gulp-sass)
--   [gulp-uglify](https://www.npmjs.com/package/gulp-uglify)
--   [internal-ip](https://www.npmjs.com/package/internal-ip)
-
 ### Principais Metodologias
 
 -   [ES6](http://es6-features.org/)
--   [RequireJS](https://requirejs.org/)
