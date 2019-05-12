@@ -47,10 +47,12 @@ module.exports = {
         runtimeChunk: true
     },
     plugins: [
-        new cleanWebpackPlugin(),
         new miniCssExtractPlugin({
             chunkFilename: `${commonPaths.cssFolder}/[name].css`,
             filename: `${commonPaths.cssFolder}/[name].css`
+        }),
+        new cleanWebpackPlugin({
+            cleanOnceBeforeBuildPatterns: []
         })
     ],
     devtool: 'source-map'
