@@ -3,6 +3,7 @@ const commonPaths = require('./paths');
 const htmlWebpackPlugin = require('html-webpack-plugin');
 const miniCssExtractPlugin = require('mini-css-extract-plugin');
 const scriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
+const styleLintPlugin = require('stylelint-webpack-plugin');
 const webpack = require('webpack');
 
 const devMode = process.env.NODE_ENV === 'development' ? true : false;
@@ -107,6 +108,17 @@ module.exports = {
         new miniCssExtractPlugin({
             chunkFilename: devMode ? `${commonPaths.cssFolder}/[name].css` : `${commonPaths.cssFolder}/[name].[hash].css`,
             filename: devMode ? `${commonPaths.cssFolder}/[name].css` : `${commonPaths.cssFolder}/[name].[hash].css`
+        }),
+        new styleLintPlugin({
+            configFile: '.stylelintrc',
+            context: './src',
+            emitErros: devMode,
+            failOnError: false,
+            files: [
+                'component/**/*.scss',
+                'asset/scss/**/*.scss'
+            ],
+            syntax: 'scss'
         }),
         new webpack.ProgressPlugin()
     ]
