@@ -12,6 +12,7 @@ module.exports = {
     output: {
         chunkFilename: devMode ? `${commonPaths.jsFolder}/[name].js` : `${commonPaths.jsFolder}/[name].[chunkhash].js`,
         filename: devMode ? `${commonPaths.jsFolder}/[name].js` : `${commonPaths.jsFolder}/[name].[hash].js`,
+        publicPath: '/',
         path: commonPaths.outputPath
     },
     module: {
@@ -37,7 +38,7 @@ module.exports = {
                         loader: devMode ? 'style-loader' : miniCssExtractPlugin.loader,
                         options: {
                             hmr: devMode,
-                            publicPath: commonPaths.outputPath
+                            sourceMap: devMode ? true : false
                         }
                     },
                     {
