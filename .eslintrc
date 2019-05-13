@@ -1,4 +1,9 @@
 {
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": true
+    },
     "extends": ["plugin:prettier/recommended", "prettier/react"],
     "globals": {
         "$": true,
@@ -12,7 +17,8 @@
     "parser": "babel-eslint",
     "parserOptions": {
         "ecmaFeatures": {
-            "jsx": true
+            "jsx": true,
+            "modules": true
         },
         "ecmaVersion": 6,
         "sourceType": "module"
@@ -91,10 +97,5 @@
         ],
         "semi": "warn",
         "strict": "error"
-    },
-    "env": {
-        "browser": true,
-        "es6": true,
-        "node": true
     }
 }
