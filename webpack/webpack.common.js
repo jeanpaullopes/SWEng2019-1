@@ -105,8 +105,8 @@ module.exports = {
             defaultAttribute: 'async'
         }),
         new miniCssExtractPlugin({
-            chunkFilename: devMode ? `${commonPaths.outputPath}/${commonPaths.cssFolder}/[name].css` : `${commonPaths.outputPath}/${commonPaths.cssFolder}/[name].[hash].css`,
-            filename: devMode ? `${commonPaths.outputPath}/${commonPaths.cssFolder}/[name].css` : `${commonPaths.outputPath}/${commonPaths.cssFolder}/[name].[hash].css`
+            chunkFilename: devMode ? `${commonPaths.cssFolder}/[name].css` : `${commonPaths.cssFolder}/[name].[hash].css`,
+            filename: devMode ? `${commonPaths.cssFolder}/[name].css` : `${commonPaths.cssFolder}/[name].[hash].css`
         }),
         new webpack.ProgressPlugin()
     ]
