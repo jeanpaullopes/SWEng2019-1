@@ -38,7 +38,7 @@ module.exports = {
                         loader: devMode ? 'style-loader' : miniCssExtractPlugin.loader,
                         options: {
                             hmr: devMode,
-                            sourceMap: devMode ? true : false
+                            sourceMap: devMode
                         }
                     },
                     {
@@ -47,13 +47,13 @@ module.exports = {
                             camelCase: true,
                             modules: true,
                             localIdentName: '[local]___[hash:base64:5]',
-                            sourceMap: devMode ? true : false
+                            sourceMap: devMode
                         }
                     },
                     {
                         loader: 'sass-loader',
                         options: {
-                            sourceMap: devMode ? true : false
+                            sourceMap: devMode
                         }
                     }
                 ]
