@@ -40,6 +40,10 @@ Executar apenas a primeira vez no terminal:
 
 -   npm i
 
+### Referências de padrão no desenvolvimento React
+
+-   [Airbnb](https://github.com/airbnb/javascript/tree/master/react#naming)
+
 ### Referências de CSS auxiliar
 
 -   [Bootstrap Display](https://getbootstrap.com/docs/4.3/utilities/display/)

@@ -85,11 +85,11 @@ module.exports = {
     },
     resolve: {
         modules: ['src', 'node_modules'],
-        extensions: ['*', '.js', '.jsx', '.css', '.scss']
+        extensions: ['*', '.js', '.jsx', '.scss']
     },
     performance: {
         hints: 'warning', // enum
-        maxAssetSize: 200000, // int (in bytes),
+        maxAssetSize: 250000, // int (in bytes),
         maxEntrypointSize: 400000, // int (in bytes)
         assetFilter: function(assetFilename) {
             // Function predicate that provides asset filenames
