@@ -1,12 +1,16 @@
-# SWEng2019-1
+## PADRÕES
 
-Projeto da turma de Fundamentos de Engenharia de Software FTEC 2019/1
+-   Nomes no singular: Todas as pastas;
+-   Idioma inglês: Todos os nomes, exceto nomes próprios, como seções ou páginas;
+-   lowerCamelCase: Nomes de variáveis, funções, métodos - Ex: functionName;
+-   UpperCamelCase: Nomes de classes, interfaces - Ex: ClassName;
+-   spinal-case: Nomes no CSS, arquivos - Ex: topo-imagem-1.jpg;
+-   snake_case: Nomes de pastas - Ex: folder_name;
 
 ## INSTALAÇÕES NECESSÁRIA PARA O PROJETO
 
 -   [GIT](https://git-scm.com/downloads)
 -   [NodeJS](https://nodejs.org/en/download/)
--   [Xampp](https://www.apachefriends.org/download.html)
 
 ## MODO DE USAR O TERMINAL
 
@@ -43,6 +47,7 @@ Executar apenas a primeira vez no terminal:
 ### Referências de padrão no desenvolvimento React
 
 -   [Airbnb](https://github.com/airbnb/javascript/tree/master/react#naming)
+-   [Estrutura](https://hackernoon.com/the-100-correct-way-to-structure-a-react-app-or-why-theres-no-such-thing-3ede534ef1ed)
 
 ### Referências de CSS auxiliar
 
@@ -53,7 +58,6 @@ Executar apenas a primeira vez no terminal:
 
 ### Imagens
 
--   Rodar o 'gulp image' para otimizar as imagens de pasta resources e colocar na pasta public;
 -   Seguir a nomenclatura spinal-case - Ex: image-name;
 
 ### Javascript

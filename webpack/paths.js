@@ -9,7 +9,7 @@ const paths = {
 module.exports = {
     root: path.resolve(__dirname, '../'),
     assetPath: path.resolve(__dirname, '../', paths.asset),
-    entryPath: path.resolve(__dirname, '../', `${paths.src}/index.jsx`),
+    entryPath: path.resolve(__dirname, '../', `${paths.src}/index.js`),
     outputPath: path.resolve(__dirname, '../', paths.public),
     templatePath: path.resolve(__dirname, '../', `${paths.src}/index.html`),
     cssFolder: `${paths.asset}/css`,

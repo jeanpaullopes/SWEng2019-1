@@ -20,7 +20,7 @@ module.exports = {
         rules: [
             {
                 enforce: 'pre',
-                test: /\.(js|jsx)$/,
+                test: /\.(js)$/,
                 loader: 'eslint-loader',
                 exclude: /(node_modules)/,
                 options: {
@@ -28,7 +28,7 @@ module.exports = {
                 }
             },
             {
-                test: /\.(js|jsx)$/,
+                test: /\.(js)$/,
                 loader: 'babel-loader',
                 exclude: /(node_modules)/
             },
@@ -85,7 +85,7 @@ module.exports = {
     },
     resolve: {
         modules: ['src', 'node_modules'],
-        extensions: ['*', '.js', '.jsx', '.scss']
+        extensions: ['*', '.js', '.scss']
     },
     performance: {
         hints: 'warning', // enum

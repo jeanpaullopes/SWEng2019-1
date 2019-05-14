@@ -17,7 +17,7 @@
     "parser": "babel-eslint",
     "parserOptions": {
         "ecmaFeatures": {
-            "jsx": true,
+            "jsx": false,
             "modules": true
         },
         "ecmaVersion": 6,
@@ -38,7 +38,9 @@
         "import/no-extraneous-dependencies": "off",
         "indent": ["error", 4],
         "jsx-a11y/anchor-is-valid": "off",
+        "jsx-a11y/alt-text": "warn",
         "jsx-a11y/href-no-hash": "off",
+        "jsx-quotes": ["warn", "prefer-double"],
         "new-cap": "off",
         "no-alert": "off",
         "no-bitwise": "off",
@@ -73,12 +75,15 @@
             }
         ],
         "react/jsx-indent": ["warn", 2],
-        "react/jsx-key": "error",
         "react/jsx-indent-props": 0,
+        "react/jsx-key": "error",
+        "react/jsx-no-bind": "error",
         "react/jsx-one-expression-per-line": "off",
+        "react/jsx-pascal-case": "warn",
         "react/jsx-wrap-multilines": ["warn"],
         "react/prefer-stateless-function": "warn",
         "react/require-extension": "off",
+        "react/require-render-return": "warn",
         "react/self-closing-comp": [
             "warn",
             {
