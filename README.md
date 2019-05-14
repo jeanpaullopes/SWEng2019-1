@@ -3,7 +3,7 @@
 -   Nomes no singular: Todas as pastas;
 -   Idioma inglês: Todos os nomes, exceto nomes próprios, como seções ou páginas;
 -   lowerCamelCase: Nomes de variáveis, funções, métodos - Ex: functionName;
--   UpperCamelCase: Nomes de classes, interfaces - Ex: ClassName;
+-   UpperCamelCase: Nomes de imports, classes, interfaces - Ex: ClassName;
 -   spinal-case: Nomes no CSS, arquivos - Ex: topo-imagem-1.jpg;
 -   snake_case: Nomes de pastas - Ex: folder_name;
 
@@ -25,13 +25,6 @@ Executar apenas a primeira vez no terminal:
 -   npm i (instala pacotes de tarefas)
 -   npm audit fix (corrigi problemas em pacotes)
 
-## React
-
--   Referencias da estrutura
-    [Básico](https://medium.freecodecamp.org/a-complete-react-boilerplate-tutorial-from-zero-to-hero-20023e086c4a)
-    [Extras](https://medium.com/@sethalexander/how-to-build-your-own-react-boilerplate-1a97d09337fd)
-    [Extras](https://www.robinwieruch.de/minimal-react-webpack-babel-setup/)
-
 #### Ambiente de desenvolvimento, executar no terminal:
 
 -   npm run dev
@@ -44,10 +37,17 @@ Executar apenas a primeira vez no terminal:
 
 -   npm i
 
-### Referências de padrão no desenvolvimento React
+### React
 
--   [Airbnb](https://github.com/airbnb/javascript/tree/master/react#naming)
--   [Estrutura](https://hackernoon.com/the-100-correct-way-to-structure-a-react-app-or-why-theres-no-such-thing-3ede534ef1ed)
+-   Referencias da estrutura
+    [Básico](https://medium.freecodecamp.org/a-complete-react-boilerplate-tutorial-from-zero-to-hero-20023e086c4a)
+    [Extra básico](https://www.robinwieruch.de/minimal-react-webpack-babel-setup/)
+    [Extra avançado](https://medium.com/@sethalexander/how-to-build-your-own-react-boilerplate-1a97d09337fd)
+    
+-   Referências de padrão no desenvolvimento React
+    [Airbnb](https://github.com/airbnb/javascript/tree/master/react#naming)
+    [Estrutura básica](https://hackernoon.com/how-to-structure-your-react-app-98c48e102aad)
+    [Estrutura avançada](https://hackernoon.com/the-100-correct-way-to-structure-a-react-app-or-why-theres-no-such-thing-3ede534ef1ed)
 
 ### Referências de CSS auxiliar
 
