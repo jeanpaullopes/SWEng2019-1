@@ -28,10 +28,6 @@ Executar apenas a primeira vez no terminal:
     [Extras](https://medium.com/@sethalexander/how-to-build-your-own-react-boilerplate-1a97d09337fd)
     [Extras](https://www.robinwieruch.de/minimal-react-webpack-babel-setup/)
 
-### Necessário para funcionar o projeto
-
--
-
 #### Ambiente de desenvolvimento, executar no terminal:
 
 -   npm run dev
@@ -39,6 +35,10 @@ Executar apenas a primeira vez no terminal:
 #### Ambiente de produção, executar no terminal:
 
 -   npm run prod
+
+#### Caso ocorra algum erro posteriormente, executar no terminal:
+
+-   npm i
 
 ### Referências de CSS auxiliar
 
