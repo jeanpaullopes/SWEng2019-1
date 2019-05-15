@@ -3,9 +3,9 @@
 -   Nomes no singular: Todas as pastas;
 -   Idioma inglês: Todos os nomes, exceto nomes próprios, como seções ou páginas;
 -   lowerCamelCase: Nomes de variáveis, funções, métodos - Ex: functionName;
--   UpperCamelCase: Nomes de imports, classes, interfaces - Ex: ClassName;
+-   UpperCamelCase: Nomes de imports, classes, interfaces, pastas de componentes, arquivos de componentes - Ex: ClassName, HeaderContainer.js;
 -   spinal-case: Nomes no CSS, arquivos - Ex: topo-imagem-1.jpg;
--   snake_case: Nomes de pastas - Ex: folder_name;
+-   snake_case: Nomes de pastas, exceto pastas de componentes - Ex: folder_name;
 
 ## INSTALAÇÕES NECESSÁRIA PARA O PROJETO
 
@@ -23,7 +23,7 @@ Executar apenas a primeira vez no terminal:
 -   npm i -g npm (atualiza NPM)
 -   npm i -g node-sass (atualiza node-sass globalmente)
 -   npm i (instala pacotes de tarefas)
--   npm audit fix (corrigi problemas em pacotes)
+-   npm audit fix (corrigir pacotes)
 
 #### Ambiente de desenvolvimento, executar no terminal:
 
@@ -49,6 +49,9 @@ Executar apenas a primeira vez no terminal:
     [Estrutura básica](https://hackernoon.com/how-to-structure-your-react-app-98c48e102aad)
     [Estrutura avançada](https://hackernoon.com/the-100-correct-way-to-structure-a-react-app-or-why-theres-no-such-thing-3ede534ef1ed)
 
+-   Referências de Componentes usando Hooks
+    [Hooks](https://www.robinwieruch.de/react-function-component/)
+
 ### Referências de CSS auxiliar
 
 -   [Bootstrap Display](https://getbootstrap.com/docs/4.3/utilities/display/)
@@ -72,11 +75,11 @@ Executar apenas a primeira vez no terminal:
 
 -   Utilizar rel="noopener" [Link](https://desenvolvimentoparaweb.com/miscelanea/relnoopener-performance-seguranca/);
 
-### Plugins
+### Libs
 
 -   HttpRequest: [Axios](https://github.com/axios/axios);
 
-### SASS
+### Sass
 
 -   Utilizar as variáveis sempre que possível;
 -   Media queries dentro do próprio elemento seguindo os padrões especificados no projeto;
