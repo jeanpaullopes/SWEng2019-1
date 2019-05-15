@@ -21,19 +21,24 @@ module.exports = {
             {
                 enforce: 'pre',
                 test: /\.(js)$/,
-                loader: 'eslint-loader',
                 exclude: /(node_modules)/,
-                options: {
-                    emitWarning: devMode
+                use: {
+                    loader: 'eslint-loader',
+                    options: {
+                        emitWarning: devMode
+                    }
                 }
             },
             {
                 test: /\.(js)$/,
-                loader: 'babel-loader',
-                exclude: /(node_modules)/
+                exclude: /(node_modules)/,
+                use: {
+                    loader: 'babel-loader'
+                }
             },
             {
                 test: /\.(css|scss)$/,
+                exclude: /(node_modules)/,
                 use: [
                     {
                         loader: devMode ? 'style-loader' : miniCssExtractPlugin.loader,
@@ -61,6 +66,7 @@ module.exports = {
             },
             {
                 test: /\.(gif|jpg|png|svg)$/,
+                exclude: /(node_modules)/,
                 use: [
                     {
                         loader: 'file-loader',
@@ -72,6 +78,7 @@ module.exports = {
             },
             {
                 test: /\.(eot|ttf|woff|woff2)$/,
+                exclude: /(node_modules)/,
                 use: [
                     {
                         loader: 'file-loader',
@@ -91,7 +98,7 @@ module.exports = {
         hints: 'warning', // enum
         maxAssetSize: 250000, // int (in bytes),
         maxEntrypointSize: 400000, // int (in bytes)
-        assetFilter: function(assetFilename) {
+        assetFilter: function (assetFilename) {
             // Function predicate that provides asset filenames
             return assetFilename.endsWith('.css') || assetFilename.endsWith('.js');
         }

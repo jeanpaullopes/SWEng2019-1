@@ -11,6 +11,7 @@ module.exports = {
     assetPath: path.resolve(__dirname, '../', paths.asset),
     entryPath: path.resolve(__dirname, '../', `${paths.src}/index.js`),
     outputPath: path.resolve(__dirname, '../', paths.public),
+    srcPath: path.resolve(__dirname, '../', paths.src),
     templatePath: path.resolve(__dirname, '../', `${paths.src}/index.html`),
     cssFolder: `${paths.asset}/css`,
     fontsFolder: `${paths.asset}/font`,
