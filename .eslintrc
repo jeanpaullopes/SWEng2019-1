@@ -29,6 +29,7 @@
     },
     "plugins": [
         "react",
+        "react-hooks",
         "prettier"
     ],
     "root": true,
@@ -168,6 +169,8 @@
                 }
             }
         ],
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "warn",
         "semi": "error",
         "strict": "error"
     }
