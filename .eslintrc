@@ -44,9 +44,13 @@
         "global-require": "off",
         "import/extensions": "off",
         "import/no-extraneous-dependencies": "off",
+        "import/prefer-default-export": "off",
         "indent": [
             "error",
-            4
+            4,
+            {
+                "SwitchCase": 1
+            }
         ],
         "jsx-a11y/anchor-is-valid": "off",
         "jsx-a11y/alt-text": "warn",
@@ -91,7 +95,23 @@
         "no-extra-semi": "warn",
         "no-debugger": "error",
         "no-caller": "warn",
-        "prettier/prettier": "error",
+        "prettier/prettier": [
+            "warn",
+            {
+                "arrowParens": "always",
+                "bracketSpacing": true,
+                "jsxBracketSameLine": false,
+                "jsxSingleQuote": false,
+                "printWidth": 300,
+                "proseWrap": "preserve",
+                "requirePragma": false,
+                "semi": true,
+                "singleQuote": true,
+                "tabWidth": 4,
+                "trailingComma": "none",
+                "useTabs": false
+            }
+        ],
         "quotes": [
             "warn",
             "single",
@@ -131,7 +151,7 @@
             }
         ],
         "react/jsx-indent": [
-            "warn",
+            "error",
             4
         ],
         "react/jsx-indent-props": 0,
@@ -143,6 +163,7 @@
             "warn"
         ],
         "react/prefer-stateless-function": "warn",
+        "react/prop-types": "off",
         "react/require-extension": "off",
         "react/require-render-return": "warn",
         "react/self-closing-comp": [

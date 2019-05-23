@@ -8,7 +8,7 @@ const paths = {
 
 module.exports = {
     root: path.resolve(__dirname, '../'),
-    assetPath: path.resolve(__dirname, '../', paths.asset),
+    assetPath: path.resolve(__dirname, '../', `${paths.public}/${paths.asset}`),
     entryPath: path.resolve(__dirname, '../', `${paths.src}/index.js`),
     outputPath: path.resolve(__dirname, '../', paths.public),
     srcPath: path.resolve(__dirname, '../', paths.src),

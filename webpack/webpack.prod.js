@@ -43,7 +43,7 @@ module.exports = {
     },
     plugins: [
         new cleanWebpackPlugin({
-            cleanOnceBeforeBuildPatterns: [`${commonPaths.outputPath}/${commonPaths.assetPath}`]
+            cleanOnceBeforeBuildPatterns: commonPaths.assetPath
         })
     ],
     devtool: 'source-map'

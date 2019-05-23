@@ -37,7 +37,7 @@ module.exports = {
                 }
             },
             {
-                test: /\.(css|scss)$/,
+                test: /\.(scss)$/,
                 exclude: /(node_modules)/,
                 use: [
                     {
@@ -50,9 +50,9 @@ module.exports = {
                     {
                         loader: 'css-loader',
                         options: {
-                            camelCase: true,
+                            camelCase: false,
                             modules: true,
-                            localIdentName: '[local]___[hash:base64:5]',
+                            localIdentName: '[local]',
                             sourceMap: devMode
                         }
                     },
@@ -65,7 +65,7 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(gif|jpg|png|svg)$/,
+                test: /\.(gif|jpg|png)$/,
                 exclude: /(node_modules)/,
                 use: [
                     {
@@ -122,8 +122,8 @@ module.exports = {
             emitErros: devMode,
             failOnError: false,
             files: [
-                'component/**/*.scss',
-                'asset/scss/**/*.scss'
+                'asset/scss/**/*.scss',
+                'component/**/*.scss'
             ],
             syntax: 'scss'
         }),

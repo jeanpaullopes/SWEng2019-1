@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 
 import App from './App';
 
+import './asset/scss/common/common.scss';
+import './asset/scss/layout/layout.scss';
+
 // import * as ServiceWorker from './service-worker.js';
 
 ReactDOM.render(<App />, document.getElementById('app'));
