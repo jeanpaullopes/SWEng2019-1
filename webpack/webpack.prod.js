@@ -1,9 +1,8 @@
-const commonPaths = require('./paths');
-
 const cleanWebpackPlugin = require('clean-webpack-plugin');
-const miniCssExtractPlugin = require('mini-css-extract-plugin');
 const optimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const terserPlugin = require('terser-webpack-plugin');
+
+const commonPaths = require('./paths');
 
 module.exports = {
     mode: 'production',

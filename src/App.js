@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import { Carona } from './component/Carona';
 import { Footer } from './component/Footer';
@@ -10,10 +10,13 @@ export const App = () => {
     return (
         <Fragment>
             <Header />
-            <Switch>
-                <Route exact path="/" component={Home} />
-                <Route path="/caronas" component={Carona} />
-            </Switch>
+            <BrowserRouter>
+                <Switch>
+                    <Route exact path="/" component={Home} />
+                    <Route path="/caronas" component={Carona} />
+                    <Route path="*" component={Carona} />
+                </Switch>
+            </BrowserRouter>
             <Footer />
         </Fragment>
     );

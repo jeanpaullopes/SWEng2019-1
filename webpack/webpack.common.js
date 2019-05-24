@@ -1,12 +1,12 @@
-const commonPaths = require('./paths');
-
 const htmlWebpackPlugin = require('html-webpack-plugin');
 const miniCssExtractPlugin = require('mini-css-extract-plugin');
 const scriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
 const styleLintPlugin = require('stylelint-webpack-plugin');
 const webpack = require('webpack');
 
-const devMode = process.env.NODE_ENV === 'development' ? true : false;
+const commonPaths = require('./paths');
+
+const devMode = process.env.NODE_ENV === 'development';
 
 module.exports = {
     entry: commonPaths.entryPath,
@@ -98,7 +98,7 @@ module.exports = {
         hints: 'warning', // enum
         maxAssetSize: 250000, // int (in bytes),
         maxEntrypointSize: 400000, // int (in bytes)
-        assetFilter: function (assetFilename) {
+        assetFilter: (assetFilename) => {
             // Function predicate that provides asset filenames
             return assetFilename.endsWith('.css') || assetFilename.endsWith('.js');
         }
@@ -121,10 +121,7 @@ module.exports = {
             context: './src',
             emitErros: devMode,
             failOnError: false,
-            files: [
-                'asset/scss/**/*.scss',
-                'component/**/*.scss'
-            ],
+            files: ['asset/scss/**/*.scss', 'component/**/*.scss'],
             syntax: 'scss'
         }),
         new webpack.ProgressPlugin()
