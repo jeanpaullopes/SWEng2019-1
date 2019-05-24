@@ -2,7 +2,7 @@ import React from 'react';
 
 import './Footer.scss';
 
-const Footer = () => {
+export const Footer = () => {
     return (
         <footer className="content-padding-y">
             <div className="container">
@@ -11,5 +11,3 @@ const Footer = () => {
         </footer>
     );
 };
-
-export default Footer;

@@ -1,16 +1,20 @@
 import React, { Fragment } from 'react';
+import { Route, Switch } from 'react-router-dom';
 
-import Footer from './component/Footer';
-import Header from './component/Header';
+import { Carona } from './component/Carona';
+import { Footer } from './component/Footer';
+import { Header } from './component/Header';
+import { Home } from './component/Home';
 
-const App = () => {
+export const App = () => {
     return (
         <Fragment>
             <Header />
-            <main>main</main>
+            <Switch>
+                <Route exact path="/" component={Home} />
+                <Route path="/caronas" component={Carona} />
+            </Switch>
             <Footer />
         </Fragment>
     );
 };
-
-export default App;
