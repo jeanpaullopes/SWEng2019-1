@@ -1,11 +1,12 @@
 import React from 'react';
 
-export const ExternalLink = ({ href, target, text, children }) => {
+export const ExternalLink = ({ ariaLabel = '', children, href = '#', target = '', text = '' }) => {
+    const acessibility = ariaLabel || text;
     const content = children || text;
     const noOpener = target === '_blank' ? 'noopener' : '';
 
     return (
-        <a href={href} target={target} aria-label={text} rel={noOpener}>
+        <a aria-label={acessibility} href={href} rel={noOpener} target={target}>
             {content}
         </a>
     );
