@@ -39,33 +39,41 @@ Executar apenas a primeira vez no terminal:
 
 ### React
 
--   Referencias para configuração:
-    [Configuração básica](https://medium.freecodecamp.org/a-complete-react-boilerplate-tutorial-from-zero-to-hero-20023e086c4a);
-    [Configuração básica](https://www.robinwieruch.de/minimal-react-webpack-babel-setup/);
-    [Configuração avançada](https://medium.com/@sethalexander/how-to-build-your-own-react-boilerplate-1a97d09337fd);
+#### Referencias para configuração:
 
--   Referencias para estrutura de pastas e arquivos:
-    [Estrutura básica](https://medium.com/@damusnet/how-to-structure-your-files-in-a-large-react-application-the-problem-2ed67f5fc145);
+-   [Configuração básica](https://medium.freecodecamp.org/a-complete-react-boilerplate-tutorial-from-zero-to-hero-20023e086c4a);
+-   [Configuração básica](https://www.robinwieruch.de/minimal-react-webpack-babel-setup/);
+-   [Configuração avançada](https://medium.com/@sethalexander/how-to-build-your-own-react-boilerplate-1a97d09337fd);
 
--   Referências para padrão no desenvolvimento:
-    [Airbnb](https://github.com/airbnb/javascript/tree/master/react#naming);
+#### Referencias para estrutura de pastas e arquivos:
 
--   Referências para componentes usando Hooks:
-    [Hooks](https://www.robinwieruch.de/react-function-component/);
-    [Hooks - CRUD](https://www.taniarascia.com/crud-app-in-react-with-hooks/);
+-   [Estrutura básica](https://medium.com/@damusnet/how-to-structure-your-files-in-a-large-react-application-the-problem-2ed67f5fc145);
 
--   Referências para Router:
-    [Router - SPA](https://www.taniarascia.com/using-react-router-spa/);
+#### Referências para padrão no desenvolvimento:
 
--   Referências para Styled Component:
-    [Styled-Components](https://www.styled-components.com/)
-    [Post Styled-Components básico](https://blog.getty.io/desenvolvendo-apps-com-styled-components-85ec6880b194)
-    [Post Styled-Components avançado](https://blog.pagepro.co/2018/11/06/moving-best-scss-practices-to-styled-components-part-1/)
-    [Post Styled-Components avançado](https://www.robinwieruch.de/react-styled-components/)
-    [Post CSS to Style-Components](https://jsramblings.com/2017/10/29/migrating-to-styled-components-cheatsheet.html)
+-   [Airbnb](https://github.com/airbnb/javascript/tree/master/react#naming);
 
--   Boas práticas:
-    Evitar a utilização de export default;
+#### Referências para componentes usando Hooks:
+
+-   [Hooks](https://www.robinwieruch.de/react-function-component/);
+-   [Hooks - CRUD](https://www.taniarascia.com/crud-app-in-react-with-hooks/);
+
+#### Referências para Router:
+
+-   [Router - SPA](https://www.taniarascia.com/using-react-router-spa/);
+
+#### Referências para Styled Component:
+
+-   [Styled-Components](https://www.styled-components.com/)
+-   [Post Styled-Components básico](https://blog.getty.io/desenvolvendo-apps-com-styled-components-85ec6880b194)
+-   [Post Styled-Components avançado](https://blog.pagepro.co/2018/11/06/moving-best-scss-practices-to-styled-components-part-1/)
+-   [Post Styled-Components avançado](https://www.robinwieruch.de/react-styled-components/)
+-   [Post CSS to Style-Components](https://jsramblings.com/2017/10/29/migrating-to-styled-components-cheatsheet.html)
+
+#### Boas práticas:
+
+-   Evitar a utilização de export default;
+-   Usar sempre a propriedade nos elementos HTML em loops do React. Ex: <li key={list.id}>{list.text}</li>;
 
 ### Referências de CSS auxiliar
 
