@@ -120,16 +120,6 @@ export const Normalize = createGlobalStyle`
     }
 
     /* LIST */
-    dl {
-        margin-bottom: $spacing-xs;
-        dd {
-            margin: 0;
-        }
-        dt {
-            margin-top: $spacing-xs;
-        }
-    }
-
     ol,
     ul {
         display: block;
