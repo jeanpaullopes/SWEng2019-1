@@ -5,7 +5,7 @@ import './Header.scss';
 
 export const Header = () => {
     return (
-        <header className="content-padding-y">
+        <header>
             <div className="container">
                 <div className="row align-items-center justify-content-between no-gutters">
                     <div className="col-10 col-lg-5">
