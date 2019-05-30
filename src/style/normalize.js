@@ -12,14 +12,14 @@ export const Normalize = createGlobalStyle`
         z-index: 0;
     }
 
-    // Address '[hidden]' styling not present in IE 8/9.
-    // Hide the 'template' element in IE, Safari, and Firefox < 22.
+    /* Address '[hidden]' styling not present in IE 8/9. */
+    /* Hide the 'template' element in IE, Safari, and Firefox < 22. */
     [hidden],
     template {
         display: none;
     }
 
-    // Corrects block display not defined in IE6/7/8/9 & FF3
+    /* Corrects block display not defined in IE6/7/8/9 & FF3 */
     article,
     aside,
     details,
@@ -38,22 +38,22 @@ export const Normalize = createGlobalStyle`
         position: relative;
     }
 
-    /* 1. Correct 'inline-block' display not defined in IE 6/7/8/9 and Firefox 3. */
-    /* 2. Normalize vertical alignment of 'progress' in Chrome, Firefox, and Opera. */
+    /* Correct 'inline-block' display not defined in IE 6/7/8/9 and Firefox 3. */
+    /* Normalize vertical alignment of 'progress' in Chrome, Firefox, and Opera. */
     audio,
     canvas,
     progress,
     video {
-        display: inline-block; // 1
-        vertical-align: baseline; // 2
+        display: inline-block;
+        vertical-align: baseline;
     }
 
-    /* 1. Prevents modern browsers from displaying 'audio' without controls */
-    /* 2. Remove excess height in iOS 5 devices */
+    /* Prevents modern browsers from displaying 'audio' without controls */
+    /* Remove excess height in iOS 5 devices */
     audio {
         &:not([controls]) {
-            display: none; // 1
-            height: 0; // 2
+            display: none;
+            height: 0;
         }
     }
 
@@ -70,6 +70,7 @@ export const Normalize = createGlobalStyle`
 
     /* FORM */
     /* Address margins set differently in Firefox 4+, Safari, and Chrome. */
+    /* Remove inner padding and border in Firefox 4+. */
     button,
     input,
     label,
@@ -79,7 +80,6 @@ export const Normalize = createGlobalStyle`
         color: inherit;
         position: relative;
         &::-moz-focus-inner {
-            // Remove inner padding and border in Firefox 4+.
             border: 0;
         }
     }
@@ -110,9 +110,9 @@ export const Normalize = createGlobalStyle`
     /* Remove inner padding and search cancel button in Safari and Chrome on OS X. */
     /* Safari (but not Chrome) clips the cancel button when the search input has */
     /* padding (and 'textfield' appearance). */
-    /* 1. Address 'appearance' set to 'searchfield' in Safari and Chrome. */
+    /* Address 'appearance' set to 'searchfield' in Safari and Chrome. */
     input[type='search'] {
-        appearance: textfield; // 1
+        appearance: textfield;
         &::-webkit-search-cancel-button,
         &::-webkit-search-decoration {
             appearance: none;
