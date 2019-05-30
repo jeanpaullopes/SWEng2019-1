@@ -73,7 +73,7 @@ Executar apenas a primeira vez no terminal:
 #### Boas práticas:
 
 -   Evitar a utilização de export default;
--   Usar sempre a propriedade nos elementos HTML em loops do React. Ex: <li key={list.id}>{list.text}</li>;
+-   Usar sempre a propriedade "key" nos elementos HTML em loops do React. Ex: <li key={list.id}>{list.text}</li>;
 
 ### Referências de CSS auxiliar
 
