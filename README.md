@@ -57,11 +57,12 @@ Executar apenas a primeira vez no terminal:
 -   Referências para Router:
     [Router - SPA](https://www.taniarascia.com/using-react-router-spa/);
 
--   Referências para SASS como component:
+-   Referências para Styled Component:
     [Styled-Components](https://www.styled-components.com/)
     [Post Styled-Components básico](https://blog.getty.io/desenvolvendo-apps-com-styled-components-85ec6880b194)
     [Post Styled-Components avançado](https://blog.pagepro.co/2018/11/06/moving-best-scss-practices-to-styled-components-part-1/)
     [Post Styled-Components avançado](https://www.robinwieruch.de/react-styled-components/)
+    [Post CSS to Style-Components](https://jsramblings.com/2017/10/29/migrating-to-styled-components-cheatsheet.html)
 
 -   Boas práticas:
     Evitar a utilização de export default;

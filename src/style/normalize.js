@@ -1,7 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const Normalize = createGlobalStyle`
-    // GENERAL
+    /* GENERAL */
     * {
         border: 0;
         box-sizing: border-box;
@@ -38,8 +38,8 @@ export const Normalize = createGlobalStyle`
         position: relative;
     }
 
-    // 1. Correct 'inline-block' display not defined in IE 6/7/8/9 and Firefox 3.
-    // 2. Normalize vertical alignment of 'progress' in Chrome, Firefox, and Opera.
+    /* 1. Correct 'inline-block' display not defined in IE 6/7/8/9 and Firefox 3. */
+    /* 2. Normalize vertical alignment of 'progress' in Chrome, Firefox, and Opera. */
     audio,
     canvas,
     progress,
@@ -48,8 +48,8 @@ export const Normalize = createGlobalStyle`
         vertical-align: baseline; // 2
     }
 
-    // 1. Prevents modern browsers from displaying 'audio' without controls
-    // 2. Remove excess height in iOS 5 devices
+    /* 1. Prevents modern browsers from displaying 'audio' without controls */
+    /* 2. Remove excess height in iOS 5 devices */
     audio {
         &:not([controls]) {
             display: none; // 1
@@ -57,7 +57,7 @@ export const Normalize = createGlobalStyle`
         }
     }
 
-    // IMG
+    /* IMG */
     img,
     picture {
         border: 0;
@@ -68,8 +68,8 @@ export const Normalize = createGlobalStyle`
         width: auto;
     }
 
-    // FORM
-    // Address margins set differently in Firefox 4+, Safari, and Chrome.
+    /* FORM */
+    /* Address margins set differently in Firefox 4+, Safari, and Chrome. */
     button,
     input,
     label,
@@ -84,7 +84,7 @@ export const Normalize = createGlobalStyle`
         }
     }
 
-    // Re-set default cursor for disabled elements.
+    /* Re-set default cursor for disabled elements. */
     button[disabled],
     input[disabled],
     select[disabled],
@@ -97,9 +97,9 @@ export const Normalize = createGlobalStyle`
         margin: 40px 0 0 0;
     }
 
-    // Fix the cursor style for Chrome's increment/decrement buttons. For certain
-    // 'font-size' values of the 'input', it causes the cursor style of the
-    // decrement button to change from 'default' to 'text'.
+    /* Fix the cursor style for Chrome's increment/decrement buttons. For certain */
+    /* 'font-size' values of the 'input', it causes the cursor style of the */
+    /* decrement button to change from 'default' to 'text'. */
     input[type='number'] {
         &::-webkit-inner-spin-button,
         &::-webkit-outer-spin-button {
@@ -107,10 +107,10 @@ export const Normalize = createGlobalStyle`
         }
     }
 
-    // Remove inner padding and search cancel button in Safari and Chrome on OS X.
-    // Safari (but not Chrome) clips the cancel button when the search input has
-    // padding (and 'textfield' appearance).
-    // 1. Address 'appearance' set to 'searchfield' in Safari and Chrome.
+    /* Remove inner padding and search cancel button in Safari and Chrome on OS X. */
+    /* Safari (but not Chrome) clips the cancel button when the search input has */
+    /* padding (and 'textfield' appearance). */
+    /* 1. Address 'appearance' set to 'searchfield' in Safari and Chrome. */
     input[type='search'] {
         appearance: textfield; // 1
         &::-webkit-search-cancel-button,
@@ -119,7 +119,7 @@ export const Normalize = createGlobalStyle`
         }
     }
 
-    // LIST
+    /* LIST */
     dl {
         margin-bottom: $spacing-xs;
         dd {
@@ -141,7 +141,7 @@ export const Normalize = createGlobalStyle`
         width: auto;
     }
 
-    // TABLE
+    /* TABLE */
     table {
         border-collapse: collapse;
         border-spacing: 0;
