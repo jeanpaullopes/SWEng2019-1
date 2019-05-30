@@ -8,7 +8,7 @@ export const Router = () => {
     return (
         <Switch>
             <Route exact path="/" component={Home} />
-            <Route path="/caronas" component={Carona} />
+            <Route path="/carona" component={Carona} />
             <Route path="*" component={Home} />
         </Switch>
     );

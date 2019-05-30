@@ -39,14 +39,14 @@ Executar apenas a primeira vez no terminal:
 
 ### React
 
--   Referencias para estrutura:
-    [Básico](https://medium.freecodecamp.org/a-complete-react-boilerplate-tutorial-from-zero-to-hero-20023e086c4a);
-    [Extra básico](https://www.robinwieruch.de/minimal-react-webpack-babel-setup/);
-    [Extra avançado](https://medium.com/@sethalexander/how-to-build-your-own-react-boilerplate-1a97d09337fd);
+-   Referencias para configuração:
+    [Configuração básica](https://medium.freecodecamp.org/a-complete-react-boilerplate-tutorial-from-zero-to-hero-20023e086c4a);
+    [Configuração básica](https://www.robinwieruch.de/minimal-react-webpack-babel-setup/);
+    [Configuração avançada](https://medium.com/@sethalexander/how-to-build-your-own-react-boilerplate-1a97d09337fd);
 
 -   Referencias para estrutura de pastas e arquivos:
-    [Básico](https://medium.com/@damusnet/how-to-structure-your-files-in-a-large-react-application-the-problem-2ed67f5fc145);
-    
+    [Estrutura básica](https://medium.com/@damusnet/how-to-structure-your-files-in-a-large-react-application-the-problem-2ed67f5fc145);
+
 -   Referências para padrão no desenvolvimento:
     [Airbnb](https://github.com/airbnb/javascript/tree/master/react#naming);
 
@@ -56,6 +56,12 @@ Executar apenas a primeira vez no terminal:
 
 -   Referências para Router:
     [Router - SPA](https://www.taniarascia.com/using-react-router-spa/);
+
+-   Referências para SASS como component:
+    [Styled-Components](https://www.styled-components.com/)
+    [Post Styled-Components básico](https://blog.getty.io/desenvolvendo-apps-com-styled-components-85ec6880b194)
+    [Post Styled-Components avançado](https://blog.pagepro.co/2018/11/06/moving-best-scss-practices-to-styled-components-part-1/)
+    [Post Styled-Components avançado](https://www.robinwieruch.de/react-styled-components/)
 
 -   Boas práticas:
     Evitar a utilização de export default;

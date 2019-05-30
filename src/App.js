@@ -1,16 +1,20 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { Router } from './router';
+import { Normalize } from './style/normalize';
 
 import { Footer } from './component/Footer';
 import { Header } from './component/Header';
 
 export const App = () => {
     return (
-        <BrowserRouter>
-            <Header />
-            <Router />
-            <Footer />
-        </BrowserRouter>
+        <Fragment>
+            <Normalize />
+            <BrowserRouter>
+                <Header />
+                <Router />
+                <Footer />
+            </BrowserRouter>
+        </Fragment>
     );
 };
