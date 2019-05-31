@@ -65,6 +65,8 @@ Executar apenas a primeira vez no terminal:
 #### Referências para Formulários:
 
 -   [React Hook Form](https://github.com/bluebill1049/react-hook-form);
+-   [YUP Validation](https://github.com/jquense/yup#install);
+-   [Post YUP Validation](https://medium.com/@rossbulat/introduction-to-yup-object-validation-in-react-9863af93dc0e);
 
 #### Referências para Styled Component:
 
