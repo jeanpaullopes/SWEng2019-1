@@ -1,0 +1,20 @@
+
+Historia de usuario: CARONEIRO.
+
+Eu COMO caroneiro, QUERO quando logar devo visualizar as rotas dos motoristas PARA QUE SEJA POSSIVEL identificar quem atende o meu destino
+Eu COMO caroneiro, QUERO poder informar o meu destino / proximidade PARA QUE SEJA POSSIVEL identificar quem atende o meu destino
+Eu COMO caroneiro, QUERO saber o trajeto do motorista PARA QUE SEJA POSSIVEL verificar se atende o meu destino.
+Eu COMO caroneiro, QUERO saber a disponibilidade de motoristas PARA QUE SEJA POSSIVEL reservar uma carona.
+Eu COMO caroneiro, QUERO poder desistir da carona PARA QUE SEJA POSSIVEL liberar a vaga no automovel.
+Eu COMO caroneiro, QUERO poder enviar uma notificacao ao motorista PARA QUE SEJA POSSIVEL atualizar informacoes sobre a carona.
+
+
+Historia de usuario: MOTORISTA.
+
+Eu COMO motorista, QUERO quando logar devo cadastrar a carona PARA QUE SEJA POSSIVEL disponibilizar os lugares aos caroneiros
+Eu COMO motorista, QUERO poder informar o meu trajeto PARA QUE SEJA POSSIVEL ter uma rota de destino. 
+Eu COMO motorista, QUERO oferecer vagas do meu automóvel PARA QUE SEJA POSSIVEL ofertar caronas.
+Eu COMO motorista, QUERO poder definir um horario de partida PARA QUE SEJA POSSIVEL organizar as caronas.
+Eu COMO motorista, QUERO poder alterar o horario de partida PARA QUE SEJA POSSIVEL adequar aos meus horarios.
+Eu COMO motorista, QUERO poder cancelar uma carona PARA QUE SEJA POSSIVEL modificar a minha rota.
+Eu COMO motorista, QUERO poder enviar uma notifacao ao caroneiro PARA QUE SEJA POSSIVEL atualizar as informacoes sobre a carona. 
