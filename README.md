@@ -62,6 +62,10 @@ Executar apenas a primeira vez no terminal:
 
 -   [Router - SPA](https://www.taniarascia.com/using-react-router-spa/);
 
+#### Referências para Formulários:
+
+-   [React Hook Form](https://github.com/bluebill1049/react-hook-form);
+
 #### Referências para Styled Component:
 
 -   [Styled-Components](https://www.styled-components.com/)
