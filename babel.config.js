@@ -1,17 +1,17 @@
-module.exports = function (api) {
+module.exports = function(api) {
     api.cache(true);
 
     const presets = [
         [
-            "@babel/preset-env",
+            '@babel/preset-env',
             {
-                "targets": {
-                    "esmodules": true
+                targets: {
+                    esmodules: true
                 },
-                "useBuiltIns": "usage"
+                useBuiltIns: 'usage'
             }
         ],
-        "@babel/preset-react"
+        '@babel/preset-react'
     ];
 
     return {
