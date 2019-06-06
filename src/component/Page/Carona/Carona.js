@@ -16,7 +16,7 @@ export const Carona = () => {
     useEffect(() => {
         const fetchData = async () => {
             // Pass our param (:id) to the API call
-            const { data } = await axios('http://172.29.1.186/carona/caroneiroBusca.php');
+            const { data } = await axios('http://172.29.1.186/carona/caronaBusca.php');
 
             // Update state
             setCarona(data);

@@ -15,11 +15,11 @@ export const Header = () => {
                             </li>
 
                             <li>
-                                <Link to="/pesquisar">Pesquisar Caronas</Link>
+                                <Link to="/caronas">Pesquisar Caronas</Link>
                             </li>
 
                             <li>
-                                <Link to="/caronas">Minhas Caronas</Link>
+                                <Link to="/minhas-caronas">Minhas Caronas</Link>
                             </li>
 
                             <li>
