@@ -1,10 +1,11 @@
-module.exports = function(api) {
+module.exports = function getBabelConfiguration(api) {
     api.cache(true);
 
     const presets = [
         [
             '@babel/preset-env',
             {
+                corejs: '3.1.3',
                 targets: {
                     esmodules: true
                 },
