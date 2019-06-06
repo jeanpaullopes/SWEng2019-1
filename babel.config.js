@@ -5,7 +5,7 @@ module.exports = function getBabelConfiguration(api) {
         [
             '@babel/preset-env',
             {
-                corejs: '3.1.3',
+                corejs: '3',
                 targets: {
                     esmodules: true
                 },
