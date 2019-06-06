@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        api: <input id="api"/><br/>
+        json:<textarea id="json"></textarea><br/>
+        <button onclick="rodar()">rodar</button><br/>
+        <div id="result"></div>
+        
+        <script>
+            async function getJSON(url) {
+    let ret;
+    await fetch(url).then(response => response.json()).then(data => ret = data).catch(ex=>{
+            erro('getJson()', "ocorreu algum problema ao acessar a URL '"+url+"'.",ex);
+            ret = null;
+        });
+    return ret;
+}
+
+async function putJSON(url, obj) {
+    let ret;
+    let init = {
+                method: "post", 
+                body: JSON.stringify(obj),
+                headers: {
+                            "Content-Type": "application/json;charset=UTF-8",
+                        }
+               };
+    await fetch(url, init).then(response => response.json()).then(data => ret = data);
+    return ret;
+}
+async function rodar() {
+    console.log(document.getElementById("json").value);
+document.getElementById("result").innerHTML = await(putJSON("http://172.29.1.186/carona/"+document.getElementById("api").value, 
+            JSON.parse(document.getElementById("json").value)));
+            }
+</script>
+    </body>
+</html>
