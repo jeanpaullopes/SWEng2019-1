@@ -16,6 +16,10 @@
 
 -   Na pasta do projeto clicar com o direito do mouse e clicar em "Git Bash Here"
 
+## BACKEND
+
+-   http://172.29.1.186/carona/caroneiroBusca.php
+
 ## FRONTEND
 
 Executar apenas a primeira vez no terminal:
