@@ -5,7 +5,7 @@ import './Carona.scss';
 
 export const Carona = () => {
     const initialCaronaState = {
-        carona: {},
+        data: {},
         loading: true
     };
 
@@ -16,10 +16,10 @@ export const Carona = () => {
     useEffect(() => {
         const fetchData = async () => {
             // Pass our param (:id) to the API call
-            const { data } = await axios('http://172.29.1.186/carona/caronaBusca.php');
+            const response = await axios('http://172.29.1.186/carona/caroneiroBusca.php');
 
             // Update state
-            setCarona(data);
+            setCarona(response.data);
         };
 
         // Invoke the async function
@@ -30,12 +30,27 @@ export const Carona = () => {
         <main className="carona content-padding-y">
             <div className="container">
                 <div className="row align-items-center justify-content-between no-gutters">
-                    <div className="col-10 col-lg-5">
+                    <div className="col-12">
                         {carona.loading ? (
                             <h1>Carregando...</h1>
                         ) : (
-                            <ul>
-                                <li>teste</li>
+                            <ul className="list-item">
+                                <li>
+                                    <ul className="item-header">
+                                        <li>Nome</li>
+                                        <li>Email</li>
+                                        <li>Cidade</li>
+                                    </ul>
+                                </li>
+                                {carona.data.map((item) => (
+                                    <li key={item.id}>
+                                        <ul className="item">
+                                            <li>{item.nome}</li>
+                                            <li>{item.email}</li>
+                                            <li>{item.cidade}</li>
+                                        </ul>
+                                    </li>
+                                ))}
                             </ul>
                         )}
                     </div>
