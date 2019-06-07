@@ -4,9 +4,12 @@
     background-color: transparent;
 
     ul.list-item {
-        li {
+        > li {
             padding: 10px;
             width: 100%;
+            &:nth-of-type(2n) {
+                background-color: rgba(240, 240, 240, 1);
+            }
             ul.item,
             ul.item-header {
                 width: 100%;
@@ -15,6 +18,7 @@
                     min-width: 100px;
                     max-width: 30%;
                     width: auto;
+
                     &:last-of-type {
                         float: right;
                         text-align: right;
