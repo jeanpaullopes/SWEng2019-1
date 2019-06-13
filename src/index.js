@@ -4,6 +4,7 @@ import { App } from './App';
 
 import './asset/scss/common/common.scss';
 import './asset/scss/layout/layout.scss';
+import './asset/scss/layout/app.scss';
 
 // import * as ServiceWorker from './service-worker.js';
 
