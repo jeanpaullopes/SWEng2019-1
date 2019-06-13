@@ -3,7 +3,7 @@ import axios from 'axios';
 
 import './Caroneiro.scss';
 
-export const AddUserForm = (props) => {
+export const CaroneiroInserir = (props) => {
     const initialFormState = { id: 0, nome: '', fone: '', email: '' };
     const [caroneiro, setUser] = useState(initialFormState);
 
