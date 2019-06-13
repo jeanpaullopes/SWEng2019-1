@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-import './Carona.scss';
+import './Caroneiro.scss';
 
-export const Carona = () => {
+export const CaroneiroInserir = () => {
     const initialCaronaState = {
         data: {},
         loading: true

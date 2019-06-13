@@ -19,6 +19,14 @@ export const Header = () => {
                             </li>
 
                             <li>
+                                <Link to="/caroneiros">Pesquisar Caroneiros</Link>
+                            </li>
+
+                            <li>
+                                <Link to="/caroneiro-inserir">Inserir Caroneiro</Link>
+                            </li>
+
+                            <li>
                                 <Link to="/minhas-caronas">Minhas Caronas</Link>
                             </li>
 
