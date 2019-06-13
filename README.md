@@ -1,51 +1,96 @@
-# SWEng2019-1
+## PADRÕES
 
-Projeto da turma de Fundamentos de Engenharia de Software FTEC 2019/1
+-   Nomes no singular: Todas as pastas;
+-   Idioma inglês: Todos os nomes, exceto nomes próprios, como seções ou páginas;
+-   lowerCamelCase: Nomes de variáveis, funções, métodos - Ex: functionName;
+-   UpperCamelCase: Nomes de imports, classes, interfaces, pastas de componentes, arquivos de componentes - Ex: ClassName, Header.js;
+-   spinal-case: Nomes no CSS, arquivos no geral, exceto pastas de componentes e arquivos de componentes - Ex: topo-imagem-1.jpg, Header.js;
+-   snake_case: Nomes de pastas, exceto pastas de componentes - Ex: folder_name;
 
 ## INSTALAÇÕES NECESSÁRIA PARA O PROJETO
 
 -   [GIT](https://git-scm.com/downloads)
 -   [NodeJS](https://nodejs.org/en/download/)
--   [Xampp](https://www.apachefriends.org/download.html)
 
 ## MODO DE USAR O TERMINAL
 
 -   Na pasta do projeto clicar com o direito do mouse e clicar em "Git Bash Here"
+
+## BACKEND
+
+-   http://172.29.1.186/carona/caroneiroBusca.php
 
 ## FRONTEND
 
 Executar apenas a primeira vez no terminal:
 
 -   npm i -g npm (atualiza NPM)
--   npm rm -g gulp (remove GULP caso esteja instalado, pois necessita somente do gulp-cli)
--   npm i -g gulp-cli (instala gulp-cli globalmente)
 -   npm i -g node-sass (atualiza node-sass globalmente)
 -   npm i (instala pacotes de tarefas)
--   npm audit fix (corrigi problemas em pacotes)
-
-### Necessário para funcionar o projeto
-
--   Configurar no arquivo gulpfile.js o endereço do virtualhost na task do BrowserSync;
+-   npm audit fix (corrigir pacotes)
 
 #### Ambiente de desenvolvimento, executar no terminal:
 
--   gulp
+-   npm run dev
 
 #### Ambiente de produção, executar no terminal:
 
--   gulp build
+-   npm run prod
+
+#### Caso ocorra algum erro posteriormente, executar no terminal:
+
+-   npm i
+
+### React
+
+#### Referencias para configuração:
+
+-   [Configuração básica](https://medium.freecodecamp.org/a-complete-react-boilerplate-tutorial-from-zero-to-hero-20023e086c4a);
+-   [Configuração básica](https://www.robinwieruch.de/minimal-react-webpack-babel-setup/);
+-   [Configuração avançada](https://medium.com/@sethalexander/how-to-build-your-own-react-boilerplate-1a97d09337fd);
+
+#### Referencias para estrutura de pastas e arquivos:
+
+-   [Estrutura básica](https://medium.com/@damusnet/how-to-structure-your-files-in-a-large-react-application-the-problem-2ed67f5fc145);
+
+#### Referências para padrão no desenvolvimento:
+
+-   [Airbnb](https://github.com/airbnb/javascript/tree/master/react#naming);
+
+#### Referências para componentes usando Hooks:
+
+-   [Hooks](https://www.robinwieruch.de/react-function-component/);
+-   [Hooks - CRUD](https://www.taniarascia.com/crud-app-in-react-with-hooks/);
+
+#### Referências para Router:
+
+-   [Router - SPA](https://www.taniarascia.com/using-react-router-spa/);
+
+#### Referências para Formulários:
+
+-   [React Hook Form](https://github.com/bluebill1049/react-hook-form);
+-   [YUP Validation](https://github.com/jquense/yup#install);
+-   [Post YUP Validation](https://medium.com/@rossbulat/introduction-to-yup-object-validation-in-react-9863af93dc0e);
+
+#### Referências para Styled Component:
+
+-   [Styled-Components](https://www.styled-components.com/)
+-   [Post Styled-Components básico](https://blog.getty.io/desenvolvendo-apps-com-styled-components-85ec6880b194)
+-   [Post Styled-Components avançado](https://blog.pagepro.co/2018/11/06/moving-best-scss-practices-to-styled-components-part-1/)
+-   [Post Styled-Components avançado](https://www.robinwieruch.de/react-styled-components/)
+-   [Post CSS to Style-Components](https://jsramblings.com/2017/10/29/migrating-to-styled-components-cheatsheet.html)
+
+#### Boas práticas:
+
+-   Evitar a utilização de export default;
+-   Usar sempre a propriedade "key" nos elementos HTML em loops do React. Ex: <li key={list.id}>{list.text}</li>;
 
 ### Referências de CSS auxiliar
 
--   [Bootstrap Display](https://getbootstrap.com/docs/4.3/utilities/display/)
--   [Bootstrap Grid](https://getbootstrap.com/docs/4.3/layout/grid/)
--   [Bootstrap Spacing](https://getbootstrap.com/docs/4.3/utilities/spacing/)
--   [Bootstrap Text](https://getbootstrap.com/docs/4.3/utilities/text/)
-
-### Imagens
-
--   Rodar o 'gulp image' para otimizar as imagens de pasta resources e colocar na pasta public;
--   Seguir a nomenclatura spinal-case - Ex: image-name;
+-   [Bootstrap Display](https://getbootstrap.com/docs/4.3/utilities/display/);
+-   [Bootstrap Grid](https://getbootstrap.com/docs/4.3/layout/grid/);
+-   [Bootstrap Spacing](https://getbootstrap.com/docs/4.3/utilities/spacing/);
+-   [Bootstrap Text](https://getbootstrap.com/docs/4.3/utilities/text/);
 
 ### Javascript
 
@@ -55,14 +100,13 @@ Executar apenas a primeira vez no terminal:
 -   Strings utilizar apóstrofo - Ex: 'texto';
 -   Utilizar [JSDOC](https://msdn.microsoft.com/pt-br/library/Mt162307.aspx);
 
+### Libs
+
+-   HttpRequest: [Axios](https://github.com/axios/axios);
+
 ### Links externos com target="\_blank" em tags <a/>
 
 -   Utilizar rel="noopener" [Link](https://desenvolvimentoparaweb.com/miscelanea/relnoopener-performance-seguranca/);
-
-### Plugins
-
--   HttpRequest: [Axios](https://github.com/axios/axios);
--   Template Engine: [Mustache](https://github.com/janl/mustache.js/);
 
 ### SASS
 
@@ -72,33 +116,11 @@ Executar apenas a primeira vez no terminal:
 
 ### SVG
 
--   Rodar o 'gulp image-svg' para otimizar os svgs de pasta resources e colocar na pasta public;
--   Nomes dos arquivos devem começar com "svg" e seguir nomenclatura spinal-case - Ex: svg-nome-arquivo;
--   Usar os svgs de maneira inline com o file_get_contents - Ex: <?= file_get_contents(asset('assets/img/svg/svg-arrow-lg-right.svg')); ?>
-
-### Principais Dependências
-
--   [@babel/cli](https://babeljs.io/docs/en/babel-cli)
--   [@babel/core](https://www.npmjs.com/package/@babel/core)
--   [@babel/polyfill](https://babeljs.io/docs/en/babel-polyfill)
--   [@babel/preset-env](https://babeljs.io/docs/en/babel-preset-env)
--   [@babel/plugin-transform-modules-amd](https://www.npmjs.com/package/@babel/plugin-transform-modules-amd)
--   [bootstrap](https://getbootstrap.com/)
--   [browser-sync](https://browsersync.io/docs/gulp)
--   [gulp](https://www.npmjs.com/package/gulp)
--   [gulp-autoprefixer](https://www.npmjs.com/package/gulp-autoprefixer)
--   [gulp-babel](https://www.npmjs.com/package/gulp-babel)
--   [gulp-clean](https://www.npmjs.com/package/gulp-clean)
--   [gulp-eslint](https://www.npmjs.com/package/gulp-eslint)
--   [gulp-if](https://www.npmjs.com/package/gulp-if)
--   [gulp-imagemin](https://www.npmjs.com/package/gulp-imagemin)
--   [gulp-plumber](https://www.npmjs.com/package/gulp-plumber)
--   [gulp-sass](https://www.npmjs.com/package/gulp-sass)
--   [gulp-sass-lint](https://www.npmjs.com/package/gulp-sass)
--   [gulp-uglify](https://www.npmjs.com/package/gulp-uglify)
--   [internal-ip](https://www.npmjs.com/package/internal-ip)
+-   [Referência de uso](https://blog.lftechnology.com/using-svg-icons-components-in-react-44fbe8e5f91);
+-   Sempre otimizar código do Svg, juntando formas, removendo código desnecessário, entre outras otimizações;
+-   Minificar código, utilizar site [https://jakearchibald.github.io/svgomg/](https://jakearchibald.github.io/svgomg/);
+-   Utilizar como componente React;
 
 ### Principais Metodologias
 
 -   [ES6](http://es6-features.org/)
--   [RequireJS](https://requirejs.org/)

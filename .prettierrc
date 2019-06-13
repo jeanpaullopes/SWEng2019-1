@@ -1,9 +1,10 @@
 {
     "arrowParens": "always",
     "bracketSpacing": true,
+    "endOfLine": "lf",
     "jsxBracketSameLine": false,
     "jsxSingleQuote": false,
-    "printWidth": 200,
+    "printWidth": 300,
     "proseWrap": "preserve",
     "requirePragma": false,
     "semi": true,

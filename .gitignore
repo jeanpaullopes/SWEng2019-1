@@ -1,30 +1,32 @@
-# Laravel 5.7.*
-/.idea
-/.vagrant
-/node_modules
-/public/hot
-/public/storage
-/public/uploads
-/storage/*.key
-/vendor
-.env
-Homestead.json
-Homestead.yaml
-npm-debug.log
-package-lock.json
-composer.lock
-composer.phar
+# Cruft
+*~
+*#
+.#*
+.DS_Store
 
 # IDE and Editors
 /.vscode
 /nbproject
+/packages/api/etc
 *.sublime-project
 *.sublime-workspace
+.idea
 .brackets.json
 .project
 _notes
 
+# npm & yarn
+/node_modules
+.npm
+.yarn-integrity
+npm-debug.log*
+package-lock.json
+yarn-debug.log*
+yarn-error.log*
+yarn.lock*
+
 # Compiled sources
+/error_log
 *.com
 *.class
 *.dll
@@ -32,16 +34,26 @@ _notes
 *.log
 *.o
 *.so
-error_log/
-npm-debug.log*
+
+# Laravel 5.7.*
+/.vagrant
+/public/hot
+/public/storage
+/public/uploads
+/storage/*.key
+/vendor
+.env
+composer.lock
+composer.phar
+Homestead.json
+Homestead.yaml
+
+# Test
+/coverage
+.eslintcache
 
 # Generated
-public/admin/**
-public/assets/css/**
-public/assets/html/**
-public/assets/img/**
-public/assets/js/**
-public/assets/uploads/**
+/public/asset
 
 # Gitkeep
 !**/.gitkeep
