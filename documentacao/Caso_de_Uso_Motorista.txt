@@ -1,0 +1,13 @@
+Caso de Uso: Cadastrar Carona
+
+Ator Principal: Motorista
+
+   Motorista: Após logar no sistema, deve cadastrar a sua carona para informar quantos lugares tem disponivel, qual o seu destino / rota, e qual o seu horario de partida e a data da carona
+
+Cenario de Sucesso Principal:
+1 - Motorista loga no sistema após preencher o e-mail e a senha cadastrada;
+2 - Motorista preenche o numero de vagas disponiveis
+3 - Motorista preenche o seu destino
+4 - Motorista preenche a rota que ira fazer
+5 - Motorista preenche o horario de partida a partir da FTEC
+6 - Motorista confirma a disponibilidade da carona
