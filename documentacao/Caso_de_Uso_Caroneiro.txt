@@ -1,0 +1,15 @@
+Caso de Uso: Reservar Carona
+
+Ator Principal: Caroneiro
+
+Interessado e Interesse:
+
+   Caroneiro: Após logar no sistema, deve visualizar todas as rotas dos motoristas disponiveis cadastradas para o dia que atendam ao seu destino.
+
+Cenario de Sucesso Principal:
+1 - Caroneiro loga no sistema após preencher o e-mail e a senha cadastrada
+2 - O caroneiro seleciona o seu destino no combobox
+3 - O sistema apresenta as caronas que atendem ao destino informado
+4 - Caroneiro seleciona o motorista
+5 - Sistema carrega os dados da carona na tela para que o caroneiro possa reservar a vaga
+6 - Caroneiro reserva a sua vaga para garantir a carona
