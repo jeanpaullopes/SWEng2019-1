@@ -8,7 +8,7 @@ export const Header = () => {
         <header>
             <div className="container">
                 <div className="row align-items-center justify-content-between no-gutters">
-                    <div className="col-10 col-lg-5">
+                    <div className="col-12">
                         <ul>
                             <li>
                                 <Link to="/">Início</Link>

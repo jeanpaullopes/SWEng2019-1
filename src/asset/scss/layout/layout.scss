@@ -42,6 +42,7 @@ main {
 }
 
 form {
+    padding: 15px;
     label {
         display: inline-block;
         + input[type='radio'] {
