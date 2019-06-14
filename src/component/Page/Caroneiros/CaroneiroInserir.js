@@ -3,59 +3,45 @@ import axios from 'axios';
 
 import './Caroneiro.scss';
 
-export const CaroneiroInserir = () => {
-    const initialCaronaState = {
-        data: {},
-        loading: true
+export const CaroneiroInserir = (props) => {
+    const initialFormState = { id: 0, nome: '', fone: '', email: '' };
+    const [caroneiro, setUser] = useState(initialFormState);
+
+    const handleInputChange = (event) => {
+        const { nome, value } = event.target;
+
+        setUser({ ...caroneiro, [nome]: value });
     };
 
-    // Getter and setter for carona state
-    const [carona, setCarona] = useState(initialCaronaState);
-
-    // Using useEffect to retrieve data from an API (similar to componentDidMount in a class)
-    useEffect(() => {
-        const fetchData = async () => {
-            // Pass our param (:id) to the API call
-            const response = await axios('http://172.29.1.186/carona/caroneiroBusca.php');
-
-            // Update state
-            setCarona(response.data);
-        };
-
-        // Invoke the async function
-        fetchData();
-    }, []);
-
     return (
-        <main className="carona content-padding-y">
-            <div className="container">
-                <div className="row align-items-center justify-content-between no-gutters">
-                    <div className="col-12">
-                        {carona.loading ? (
-                            <h1>Carregando...</h1>
-                        ) : (
-                            <ul className="list-item">
-                                <li>
-                                    <ul className="item-header">
-                                        <li>Nome</li>
-                                        <li>Email</li>
-                                        <li>Cidade</li>
-                                    </ul>
-                                </li>
-                                {carona.data.map((item) => (
-                                    <li key={item.id}>
-                                        <ul className="item">
-                                            <li>{item.nome}</li>
-                                            <li>{item.email}</li>
-                                            <li>{item.cidade}</li>
-                                        </ul>
-                                    </li>
-                                ))}
-                            </ul>
-                        )}
-                    </div>
-                </div>
-            </div>
-        </main>
+        <form
+            onSubmit={(event) => {
+                event.preventDefault();
+
+                if (!caroneiro.nome || !caroneiro.fone) return;
+
+                props.addUser(caroneiro);
+
+                setUser(initialFormState);
+            }}
+        >
+            <label>Nome</label>
+            <input type="text" name="nome" value={caroneiro.name} onChange={handleInputChange} />
+
+            <label>Fone</label>
+            <input type="text" name="fone" value={caroneiro.fone} onChange={handleInputChange} />
+
+            <label>Email</label>
+            <input type="text" name="email" value={caroneiro.email} onChange={handleInputChange} />
+
+            <label>Sexo</label>
+            <input type="radio" name="sexo" value={caroneiro.sexo} onChange={handleInputChange} />
+            <input type="radio" name="sexo" value={caroneiro.sexo} onChange={handleInputChange} />
+
+            <label>Cidade</label>
+            <input type="text" name="cidade" value={caroneiro.cidade} onChange={handleInputChange} />
+
+            <button type="submit">Inserir novo caroneiro</button>
+        </form>
     );
 };
