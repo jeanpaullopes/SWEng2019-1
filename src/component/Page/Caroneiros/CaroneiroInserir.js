@@ -4,7 +4,7 @@ import axios from 'axios';
 import './Caroneiro.scss';
 
 export const CaroneiroInserir = (props) => {
-    const initialFormState = { id: 0, nome: '', fone: '', email: '', sexo: 'm', cidade: '' };
+    const initialFormState = { id: 0, nome: '', fone: '', email: '', sexo: 'm', cidade: '', destinoPadrao: '' };
     const [caroneiro, setUser] = useState(initialFormState);
 
     const handleInputChange = (event) => {
@@ -15,6 +15,7 @@ export const CaroneiroInserir = (props) => {
 
     return (
         <div className="container">
+            <h5>Novo Caroneiro</h5>
             <form
                 onSubmit={(event) => {
                     event.preventDefault();
@@ -24,7 +25,7 @@ export const CaroneiroInserir = (props) => {
                     if (!caroneiro.nome || !caroneiro.fone) return;
 
                     axios
-                        .post('http://172.29.1.186/carona/caroneiroGrava.php', caroneiro)
+                        .post('http://172.29.1.186/carona/caroneiroGrava.php', caroneiro, { headers: { 'Access-Control-Allow-Origin': '*' } })
                         .then(function(response) {
                             console.log(response);
                         })
@@ -52,6 +53,16 @@ export const CaroneiroInserir = (props) => {
                     </div>
 
                     <div className="col-12 col-sm-6">
+                        <label>Destino Padrão</label>
+                        <input type="text" name="destinoPadrao" value={caroneiro.destinoPadrao} onChange={handleInputChange} />
+                    </div>
+
+                    <div className="col-12 col-sm-6">
+                        <label>Cidade</label>
+                        <input type="text" name="cidade" value={caroneiro.cidade} onChange={handleInputChange} />
+                    </div>
+
+                    <div className="col-12 col-sm-6">
                         <label>Sexo</label>
 
                         <div>
@@ -63,13 +74,8 @@ export const CaroneiroInserir = (props) => {
                         </div>
                     </div>
 
-                    <div className="col-12 col-sm-6">
-                        <label>Cidade</label>
-                        <input type="text" name="cidade" value={caroneiro.cidade} onChange={handleInputChange} />
-                    </div>
-
                     <div className="col-12">
-                        <button type="submit">Inserir novo caroneiro</button>
+                        <button type="submit">Inserir</button>
                     </div>
                 </div>
             </form>

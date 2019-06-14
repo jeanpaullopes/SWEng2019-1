@@ -31,8 +31,9 @@ export const Caroneiros = () => {
             <div className="container">
                 <div className="row align-items-center justify-content-between no-gutters">
                     <div className="col-12">
+                        <h5>Novo Caroneiro</h5>
                         {carona.loading ? (
-                            <h1>Carregando...</h1>
+                            <h3>Carregando...</h3>
                         ) : (
                             <ul className="list-item">
                                 <li>
