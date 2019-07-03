@@ -1,10 +1,17 @@
 @import '../../asset/scss/layout/variable';
 
 header {
+    background-color: dimgray;
+    
+
     ul {
         li {
             display: inline-block;
-            padding: 15px;
+            padding: 5px;
         }
+    }
+
+    .padding{
+        padding-top: 20px;
     }
 }
