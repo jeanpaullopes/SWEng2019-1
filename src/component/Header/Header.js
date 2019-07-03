@@ -11,27 +11,27 @@ export const Header = () => {
                     <div className="col-12">
                         <ul>
                             <li>
-                                <Link to="/">Início</Link>
+                                <Link to="/"><button className="btn btn-primary btn-sm">Início</button></Link>
                             </li>
 
                             <li>
-                                <Link to="/caronas">Pesquisar Caronas</Link>
+                                <Link to="/caronas"><button className="btn btn-primary btn-sm">Pesquisar Caronas</button></Link>
                             </li>
 
                             <li>
-                                <Link to="/caroneiros">Pesquisar Caroneiros</Link>
+                                <Link to="/caroneiros"><button className="btn btn-primary btn-sm">Pesquisar Caroneiros</button></Link>
                             </li>
 
                             <li>
-                                <Link to="/caroneiro-inserir">Inserir Caroneiro</Link>
+                                <Link to="/caroneiro-inserir"><button className="btn btn-primary btn-sm">Inserir Caroneiro</button></Link>
                             </li>
 
                             <li>
-                                <Link to="/minhas-caronas">Minhas Caronas</Link>
+                                <Link to="/minhas-caronas"><button className="btn btn-primary btn-sm">Minhas Caronas</button></Link>
                             </li>
 
                             <li>
-                                <Link to="/perfil">Perfil</Link>
+                                <Link to="/perfil"><button className="btn btn-primary btn-sm">Perfil</button></Link>
                             </li>
                         </ul>
                     </div>

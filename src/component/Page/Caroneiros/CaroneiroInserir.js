@@ -15,7 +15,9 @@ export const CaroneiroInserir = (props) => {
 
     return (
         <div className="container">
-            <h5>Novo Caroneiro</h5>
+            <div className="row slider-text align-items-center justify-content-center">
+                <h5>Novo Caroneiro</h5>
+            </div>
             <form
                 onSubmit={(event) => {
                     event.preventDefault();
@@ -37,32 +39,32 @@ export const CaroneiroInserir = (props) => {
                 }}
             >
                 <div className="row align-items-center justify-content-between">
-                    <div className="col-12 col-sm-6">
-                        <label>Nome</label>
-                        <input type="text" name="nome" value={caroneiro.nome} onChange={handleInputChange} />
+                    <div className="form-group col-12 col-sm-6">
+                        <label  className="my-1 mr-2">Nome</label>
+                        <input className="form-control" type="text" name="nome" value={caroneiro.nome} onChange={handleInputChange} />
                     </div>
 
-                    <div className="col-12 col-sm-6">
+                    <div className="form-group col-12 col-sm-6">
                         <label>Fone</label>
-                        <input type="text" name="fone" value={caroneiro.fone} onChange={handleInputChange} />
+                        <input className="form-control" type="text" name="fone" value={caroneiro.fone} onChange={handleInputChange} />
                     </div>
 
-                    <div className="col-12 col-sm-6">
+                    <div className="form-group col-12 col-sm-6">
                         <label>Email</label>
-                        <input type="text" name="email" value={caroneiro.email} onChange={handleInputChange} />
+                        <input className="form-control" type="text" name="email" value={caroneiro.email} onChange={handleInputChange} />
                     </div>
 
-                    <div className="col-12 col-sm-6">
+                    <div className="form-group col-12 col-sm-6">
                         <label>Destino Padrão</label>
-                        <input type="text" name="destinoPadrao" value={caroneiro.destinoPadrao} onChange={handleInputChange} />
+                        <input className="form-control" type="text" name="destinoPadrao" value={caroneiro.destinoPadrao} onChange={handleInputChange} />
                     </div>
 
-                    <div className="col-12 col-sm-6">
+                    <div className="form-group col-12 col-sm-6">
                         <label>Cidade</label>
-                        <input type="text" name="cidade" value={caroneiro.cidade} onChange={handleInputChange} />
+                        <input className="form-control" type="text" name="cidade" value={caroneiro.cidade} onChange={handleInputChange} />
                     </div>
 
-                    <div className="col-12 col-sm-6">
+                    <div className="form-group col-12 col-sm-6">
                         <label>Sexo</label>
 
                         <div>
@@ -74,7 +76,7 @@ export const CaroneiroInserir = (props) => {
                         </div>
                     </div>
 
-                    <div className="col-12">
+                    <div className="form-group col-12">
                         <button type="submit">Inserir</button>
                     </div>
                 </div>
