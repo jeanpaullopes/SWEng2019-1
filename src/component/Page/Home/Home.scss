@@ -1,5 +1,19 @@
 @import '../../../asset/scss/layout/variable';
 
 .home {
-    background-color: transparent;
+    background-image: url('../../../asset/image/slide1.jpg');
+    background-position-x: 85%;
+    background-position-y: 35%;
+
+    h1 {
+        color: white;
+        text-shadow: 4px 4px black;
+      }
+
+      p {
+        color: white;
+        text-shadow: 2px 2px black;
+        background-color: gray;
+      }
 }
+
