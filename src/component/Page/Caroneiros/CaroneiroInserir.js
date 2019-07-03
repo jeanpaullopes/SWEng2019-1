@@ -40,7 +40,7 @@ export const CaroneiroInserir = (props) => {
             >
                 <div className="row align-items-center justify-content-between">
                     <div className="form-group col-12 col-sm-6">
-                        <label  className="my-1 mr-2">Nome</label>
+                        <label className="my-1 mr-2">Nome</label>
                         <input className="form-control" type="text" name="nome" value={caroneiro.nome} onChange={handleInputChange} />
                     </div>
 
