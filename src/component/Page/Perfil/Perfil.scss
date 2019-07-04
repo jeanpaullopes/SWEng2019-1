@@ -2,4 +2,13 @@
 
 .perfil {
     background-color: transparent;
+
+    .flex1 {
+        -webkit-flex: 1;
+                flex: 1;
+      }
+    .flex2 {
+    -webkit-flex: 2;
+            flex: 2;
+    }
 }
