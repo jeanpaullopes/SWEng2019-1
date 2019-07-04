@@ -9,13 +9,13 @@ export const Home = () => {
                 <div className="row align-items-center justify-content-between no-gutters">
                     <div className="container">
                         <div className="row slider-text align-items-center justify-content-center">
-                            <h1>Quer ir aonde?</h1>                            
+                            <h1>Quer ir aonde?</h1>
                         </div>
                         <div className="row slider-text align-items-center justify-content-center">
                             <p>Possuímos caronas de confiança, com milhares de clientes por todo o brasil!</p>
                         </div>
                     </div>
-                
+
                     <div className="container">
                         <div className="row slider-text align-items-center justify-content-center">
                             <h1>Quer ir viajar?</h1>

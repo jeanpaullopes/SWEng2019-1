@@ -7,6 +7,8 @@ import { CaroneiroInserir } from '../component/Page/Caroneiros/CaroneiroInserir'
 import { Home } from '../component/Page/Home';
 import { Perfil } from '../component/Page/Perfil';
 
+import { Componente } from '../component/Example/Componente';
+
 export const Router = () => {
     return (
         <Switch>
@@ -16,6 +18,8 @@ export const Router = () => {
             <Route path="/caroneiro-inserir" component={CaroneiroInserir} />
             <Route path="/perfil" component={Perfil} />
             <Route path="*" component={Home} />
+
+            <Route path="/exemplo-componente" component={Componente} />
         </Switch>
     );
 };

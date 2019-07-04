@@ -11,27 +11,51 @@ export const Header = () => {
                     <div className="col-12">
                         <ul>
                             <li>
-                                <Link to="/"><button className="btn btn-outline-primary">Início</button></Link>
+                                <Link to="/">
+                                    <button type="button" className="btn btn-outline-primary">
+                                        Início
+                                    </button>
+                                </Link>
                             </li>
 
                             <li>
-                                <Link to="/caronas"><button className="btn btn-outline-primary">Pesquisar Caronas</button></Link>
+                                <Link to="/caronas">
+                                    <button type="button" className="btn btn-outline-primary">
+                                        Pesquisar Caronas
+                                    </button>
+                                </Link>
                             </li>
 
                             <li>
-                                <Link to="/caroneiros"><button className="btn btn-outline-primary">Pesquisar Caroneiros</button></Link>
+                                <Link to="/caroneiros">
+                                    <button type="button" className="btn btn-outline-primary">
+                                        Pesquisar Caroneiros
+                                    </button>
+                                </Link>
                             </li>
 
                             <li>
-                                <Link to="/caroneiro-inserir"><button className="btn btn-outline-primary">Inserir Caroneiro</button></Link>
+                                <Link to="/caroneiro-inserir">
+                                    <button type="button" className="btn btn-outline-primary">
+                                        Inserir Caroneiro
+                                    </button>
+                                </Link>
                             </li>
 
                             <li>
-                                <Link to="/minhas-caronas"><button className="btn btn-outline-primary">Minhas Caronas</button></Link>
+                                <Link to="/minhas-caronas">
+                                    <button type="button" className="btn btn-outline-primary">
+                                        Minhas Caronas
+                                    </button>
+                                </Link>
                             </li>
 
                             <li>
-                                <Link to="/perfil"><button className="btn btn-outline-primary">Perfil</button></Link>
+                                <Link to="/perfil">
+                                    <button type="button" className="btn btn-outline-primary">
+                                        Perfil
+                                    </button>
+                                </Link>
                             </li>
                         </ul>
                     </div>
