@@ -6,8 +6,8 @@ export const Componente = () => {
     return (
         <main className="content-padding-y">
             <div className="container">
-                <div className="row align-items-center justify-content-between">
-                    <div className="col-5">
+                <div className="row align-items-center justify-content-around">
+                    <div className="col-auto">
                         <Button1
                             data-attr="teste1"
                             onClick={() => {
@@ -18,7 +18,7 @@ export const Componente = () => {
                         </Button1>
                     </div>
 
-                    <div className="col-5">
+                    <div className="col-auto">
                         <Button2
                             data-attr="teste2"
                             onClick={() => {
